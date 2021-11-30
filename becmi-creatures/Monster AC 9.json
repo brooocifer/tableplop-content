@@ -1,0 +1,457 @@
+{
+  "properties": [
+    {
+      "id": 4119054,
+      "parentId": 4119051,
+      "type": "health",
+      "data": {},
+      "name": "hit-points",
+      "local": true,
+      "value": 0,
+      "rank": -1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119055,
+      "parentId": 4119054,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-temporary",
+      "local": true,
+      "value": 0,
+      "rank": 87,
+      "characterId": 262132
+    },
+    {
+      "id": 4119056,
+      "parentId": 4119054,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-maximum",
+      "local": true,
+      "value": 0,
+      "rank": 85,
+      "characterId": 262132
+    },
+    {
+      "id": 4119057,
+      "parentId": 4119051,
+      "type": "title-section",
+      "data": {},
+      "value": "Info",
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4119043,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Character",
+      "rank": -1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119044,
+      "parentId": 4119043,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -2,
+      "characterId": 262132
+    },
+    {
+      "id": 4119045,
+      "parentId": 4119044,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 49.25,
+      "characterId": 262132
+    },
+    {
+      "id": 4119050,
+      "parentId": 4119045,
+      "type": "appearance",
+      "data": {
+        "appearances": []
+      },
+      "value": "",
+      "rank": -1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119051,
+      "parentId": 4119044,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50.75,
+      "characterId": 262132
+    },
+    {
+      "id": 4119060,
+      "parentId": 4119057,
+      "type": "number",
+      "data": {},
+      "name": "Speed",
+      "value": 90,
+      "rank": 88,
+      "characterId": 262132
+    },
+    {
+      "id": 4119075,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Actions",
+      "rank": 1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119756,
+      "parentId": 4119057,
+      "type": "text",
+      "data": {},
+      "name": "Number of Attacks",
+      "value": "1",
+      "rank": 92,
+      "characterId": 262132
+    },
+    {
+      "id": 4119061,
+      "parentId": 4119057,
+      "type": "number",
+      "data": {},
+      "name": "Armor Class",
+      "value": 9,
+      "rank": 87,
+      "characterId": 262132
+    },
+    {
+      "id": 4119758,
+      "parentId": 4119760,
+      "type": "number",
+      "data": {},
+      "name": "Hit Dice",
+      "value": 1,
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4119759,
+      "parentId": 4119051,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -2,
+      "characterId": 262132
+    },
+    {
+      "id": 4119760,
+      "parentId": 4119759,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 262132
+    },
+    {
+      "id": 4119761,
+      "parentId": 4119759,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 262132
+    },
+    {
+      "id": 4119768,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Alignment",
+      "value": "Chaotic",
+      "rank": 2,
+      "characterId": 262132
+    },
+    {
+      "id": 4119762,
+      "parentId": 4119761,
+      "type": "number",
+      "data": {},
+      "name": "HD Modifier",
+      "value": 0,
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4119769,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Treasure",
+      "value": "0 gp",
+      "rank": 7,
+      "characterId": 262132
+    },
+    {
+      "id": 4119770,
+      "parentId": 4119057,
+      "type": "number",
+      "data": {},
+      "name": "XP",
+      "value": 5,
+      "rank": 97,
+      "characterId": 262132
+    },
+    {
+      "id": 4119766,
+      "parentId": 4119057,
+      "type": "text",
+      "data": {},
+      "name": "Damage",
+      "value": "1d6",
+      "rank": 93,
+      "characterId": 262132
+    },
+    {
+      "id": 4119767,
+      "parentId": 4119045,
+      "type": "number",
+      "data": {},
+      "name": "Morale",
+      "value": 7,
+      "rank": 4,
+      "characterId": 262132
+    },
+    {
+      "id": 4119772,
+      "parentId": 4119057,
+      "type": "number",
+      "data": {},
+      "name": "Number Appearing",
+      "value": 1,
+      "rank": 96,
+      "characterId": 262132
+    },
+    {
+      "id": 4119771,
+      "parentId": 4119057,
+      "type": "text",
+      "data": {},
+      "name": "Special Damage",
+      "value": "n/a",
+      "rank": 94,
+      "characterId": 262132
+    },
+    {
+      "id": 4119774,
+      "parentId": 4119045,
+      "type": "number",
+      "data": {},
+      "name": "Alternate Morale",
+      "value": 9,
+      "rank": 5,
+      "characterId": 262132
+    },
+    {
+      "id": 4119775,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Lair Treasure Type",
+      "value": "nil",
+      "rank": 8,
+      "characterId": 262132
+    },
+    {
+      "id": 4119776,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Carried Treasure Type",
+      "value": "nil",
+      "rank": 9,
+      "characterId": 262132
+    },
+    {
+      "id": 4119778,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Intelligence",
+      "value": "n/a",
+      "rank": 6,
+      "characterId": 262132
+    },
+    {
+      "id": 4119779,
+      "parentId": 4119043,
+      "type": "heading",
+      "data": {},
+      "value": "Other Information",
+      "rank": -1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119780,
+      "parentId": 4119043,
+      "type": "text",
+      "data": {},
+      "name": "Rule Book",
+      "value": "",
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4119781,
+      "parentId": 4119043,
+      "type": "number",
+      "data": {},
+      "name": "Page Number",
+      "value": "",
+      "rank": 1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119782,
+      "parentId": 4119043,
+      "type": "text",
+      "data": {},
+      "name": "Picture URL",
+      "value": "",
+      "rank": 2,
+      "characterId": 262132
+    },
+    {
+      "id": 4119763,
+      "parentId": 4119043,
+      "type": "number",
+      "data": {},
+      "name": "HD For THACO calc",
+      "value": 1,
+      "rank": 3,
+      "formula": "hd_modifier > 0 ? hit_dice+1 : hit_dice",
+      "characterId": 262132
+    },
+    {
+      "id": 4119757,
+      "parentId": 4119057,
+      "type": "number",
+      "data": {},
+      "name": "THACO",
+      "value": 19,
+      "rank": 90,
+      "formula": "round (0.0000000007360403*hd_for_thaco_calc^8-0.0000001131926854*hd_for_thaco_calc^7+0.0000067486249053*hd_for_thaco_calc^6-0.0001958667110075*hd_for_thaco_calc^5+0.0028018455396813*hd_for_thaco_calc^4-0.0166731418019406*hd_for_thaco_calc^3+0.0268407902579332*hd_for_thaco_calc^2-0.970892261437263*hd_for_thaco_calc+19.9733537305618)",
+      "characterId": 262132
+    },
+    {
+      "id": 4119773,
+      "parentId": 4119045,
+      "type": "text",
+      "data": {},
+      "name": "Save As",
+      "value": "Fighter",
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4124873,
+      "parentId": 4119045,
+      "type": "number",
+      "data": {},
+      "name": "Save Level",
+      "value": 0,
+      "rank": 1,
+      "characterId": 262132
+    },
+    {
+      "id": 4119078,
+      "parentId": 4119075,
+      "type": "message",
+      "data": {},
+      "name": "attack1",
+      "icon": "/images/message.png",
+      "value": "",
+      "rank": -1,
+      "message": "Shortsword: Roll 1d20 + {misc_modifier} > {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
+      "characterId": 262132
+    },
+    {
+      "id": 4119076,
+      "parentId": 4119075,
+      "type": "message",
+      "data": {},
+      "name": "attack1full",
+      "icon": "/images/message.png",
+      "value": "",
+      "rank": 1,
+      "message": "Shortsword: {temp = 1d20} + {misc_modifier} > {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier > orary and temp !=1 or temp == 20, 1d6 + misc_modifier, 1 == 0 )}",
+      "characterId": 262132
+    },
+    {
+      "id": 4172568,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Special Abilities",
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4172577,
+      "parentId": 4172568,
+      "type": "number",
+      "data": {},
+      "name": "Target AC",
+      "value": "",
+      "rank": 3,
+      "characterId": 262132
+    },
+    {
+      "id": 4172569,
+      "parentId": 4172568,
+      "type": "heading",
+      "data": {},
+      "value": "Combat Variables",
+      "rank": 0,
+      "characterId": 262132
+    },
+    {
+      "id": 4172575,
+      "parentId": 4172568,
+      "type": "number",
+      "data": {},
+      "name": "temp",
+      "value": 20,
+      "rank": 1,
+      "characterId": 262132
+    },
+    {
+      "id": 4172576,
+      "parentId": 4172568,
+      "type": "number",
+      "data": {},
+      "name": "orary",
+      "value": 17,
+      "rank": 2,
+      "characterId": 262132
+    },
+    {
+      "id": 4172583,
+      "parentId": 4119075,
+      "type": "number",
+      "data": {},
+      "name": "Misc Modifier (Missile Range, Magic, Curse, etc.)",
+      "rank": -3,
+      "characterId": 262132
+    }
+  ],
+  "private": false,
+  "type": "tableplop-character-v2"
+}
