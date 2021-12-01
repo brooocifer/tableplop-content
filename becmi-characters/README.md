@@ -10,4 +10,4 @@ Templates and associated utilities for representing BECMI characters in Tableplo
 - cleric-formulas.md - Formulas and functions for Cleric class characters
 - curve-fitting.md - Explanation of how curve fitting is used to represent Old School tables via functions/formulas for characters
 - elf-formulas.md - Formulas and functions for Elf class characters
-
+- fighter-formulas.md - Formulas and functions fo Fighter class characters
