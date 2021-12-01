@@ -1,7 +1,7 @@
 # Formulas for Halfling Class Characters
 
 ## THAC0
-`if(level<10,round(-1.899*ceil(level/3)+20.49),if(level>35,2,round(-1.919473684211*ceil(x/4)+20.49)))`
+`if(level<10,round(-1.899*ceil(level/3)+20.49),if(level>35,2,round(-1.919473684211*ceil(level/4)+20.49)))`
 
 *See RC page 106 and 266*
 
