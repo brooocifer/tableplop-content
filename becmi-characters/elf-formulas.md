@@ -6,7 +6,7 @@
 *See RC page 106 and 266*
 
 ## Saving Throw: Death Ray or Poison
-`max(2,round(-0.0193*CEILING(level/3)^3+0.5691*ceil(level/3)^2-5.793*ceil(level/3)+17.2285))`
+`max(2,round(-0.0193*ceil(level/3)^3+0.5691*ceil(level/3)^2-5.793*ceil(level/3)+17.2285))`
 
 *See RC pages 26, 109, 266 and 267*
 
