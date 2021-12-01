@@ -10,22 +10,22 @@
 
 *See RC pages 27, 109, 266 and 267*
 
-Magic Wands
+## Saving Throw: Magic Wands
 `max(3,round(-3*ceil(level/3)+12))`
 
 *See RC pages 27, 109, 266 and 267*
 
-Paralysis or Turn to Stone
+## Saving Throw: Paralysis or Turn to Stone
 `max(4,round(-3*ceil(level/3)+13))`
 
 *See RC pages 27, 109, 266 and 267*
 
-Dragon Breath
+## Saving Throw: Dragon Breath
 `max(5,round(-4*ceil(level/3)+17))`
 
 *See RC pages 27, 109, 266 and 267*
 
-Rod, Staff or Spell
+## Saving Throw: Rod, Staff or Spell
 `max(4,round(-4*ceil(level/3)+16))`
 
 *See RC pages 27, 109, 266 and 267*
