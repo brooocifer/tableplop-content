@@ -12,4 +12,4 @@ Templates and associated utilities for representing BECMI characters in Tableplo
 - elf-formulas.md - Formulas and functions for Elf class characters
 - fighter-formulas.md - Formulas and functions for Fighter class characters
 - magic-user-formulas.md - Formulas and functions for Magic User class characters
-
+- thief-formulas.md - Formulas and functions for Thief class characters
