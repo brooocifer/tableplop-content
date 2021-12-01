@@ -33,4 +33,4 @@
 ## XP by Level
 `TBD`
 
-*See RC page 24*
+*See RC page 24 and 266*
