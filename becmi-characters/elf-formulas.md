@@ -1,0 +1,71 @@
+# Formulas for Elf Class Characters
+
+## THAC0
+`if(level<10,round(-1.899*ceil(level/3)+20.49),if(level>35,2,round(-1.919473684211*level(level/4)+20.49)))`
+
+*See RC page 106 and 266*
+
+## Saving Throw: Death Ray or Poison
+`max(2,round(-0.0193*CEILING(level/3)^3+0.5691*ceil(level/3)^2-5.793*ceil(level/3)+17.2285))`
+
+*See RC pages 26, 109, 266 and 267*
+
+## Saving Throw: Magic Wands / Paralysis or Turn to Stone
+`max(4,round(-3*ceil(level/3)+16))`
+
+*See RC pages 26, 109, 266 and 267*
+
+## Saving Throw: Dragon Breath / Rod, Staff or Spell
+`max(3,round(-4*ceil(level/3)+19))`
+
+*See RC pages 26, 109, 266 and 267* 
+
+## XP by Level
+`if(level<10,1000*round(-0.00714286*level^8+0.26785714*level^7-4.21111111*level^6+36.11666669*level^5-183.79444458*level^4+564.7916671*level^3-1013.98730241*level^2+962.82381033*level-362.00000031),if(level>19,100000*round(2*level-9),10000*round(25*level-190)))`
+
+*See RC pages 26 and 266*
+
+## 1st Level Elf/Magic User Spells
+`if(level<32,round(0.00000000188039894451*level^8-0.00000028015608217661*level^7+0.0000169108295163636*level^6-0.00053078957874092*level^5+0.00925790084597673*level^4-0.0892658567570209*level^3+0.451148325726248*level^2-0.834913306304534*level+1.95428707185274),9)`
+
+*See RC pages 26 and 267*
+
+## 2nd Level Elf/Magic User Spells
+`if(level<33,round(0.00000000066372303785*level^8-0.00000004204191885536*level^7-0.00000060450644914037*level^6+0.000114238584246763*level^5-0.00374593940951017*level^4+0.0566547565171608*level^3-0.4393505689064*level^2+1.95415936011069*level-2.05783120101154),9)`
+
+*See RC pages 26 and 267*
+
+## 3rd Level Elf/Magic User Spells
+`if(level<33,round(0.00000000063753002389*level^8-0.00000009725641614994*level^7+0.00000623727930918096*level^6-0.000220391434483774*level^5+0.00469557452525647*level^4-0.0607195383502797*level^3+0.435458972820488*level^2-1.04798983833503*level+0.60028376498012),9)`
+
+*See RC pages 26 and 267*
+
+## 4th Level Elf/Magic User Spells
+`if(level<34,ROUND(-0.000000002910623*level^8+0.000000411313838*level^7-0.000023539191464*level^6+0.000696253595314*level^5-0.011180603885669*level^4+0.091808935364017*level^3-0.296701068247849*level^2+0.217575538226132*level+0.099041563214125),9)`
+
+*See RC pages 26 and 267*
+
+## 5th Level Elf/Magic User Spells
+`if(level<35,MAX(0,ROUND(-0.000000000546773*level^8+0.000000023732454*level^7+0.000002374168009*level^6-0.000220692052244*level^5+0.007425659084513*level^4-0.126946429170441*level^3+1.12997962733278*level^2-4.30838820276336*level+3.78814764021506)),9)`
+
+*See RC pages 26 and 267*
+
+## 6th Level Elf/Magic User Spells
+`if(level<35,ROUND(-0.000000000919787*level^8+0.000000141846435*level^7-0.000009253447612*level^6+0.000329252302638*level^5-0.006824148501276*level^4+0.08073100425904*level^3-0.483726682042841*level^2+1.22953733167698*level-0.920492617730635),9)`
+
+*See RC pages 26 and 267*
+
+## 7th Level Elf/Magic User Spells
+`if(level<36,MAX(0,ROUND(-0.000000179357375*level^8+0.000035466875352*level^7-0.003023648919002*level^6+0.145088809557879*level^5-4.28448128247212*level^4+79.7126045535309*level^3-912.387711765927*level^2+5874.53643201496*level-16293.3469696958)),9)`
+
+*See RC pages 26 and 267*
+
+## 8th Level Elf/Magic User Spells
+`if(level<36,IF(level<18,0,ROUND(-0.000000012168914*level^8+0.000002102107233*level^7-0.000145998517745*level^6+0.00502116040164*level^5-0.076796183300227*level^4-0.166432932210447*level^3+23.4977571548936*level^2-313.252444789988*level+1383.73091067462)),9)`
+
+*See RC pages 26 and 267*
+
+## 9th Level Elf/Magic User Spells
+`if(level<36,IF(level<21,0,ROUND(-0.000000461019932*level^8+0.00011524666803*level^7-0.012441777793047*level^6+0.75862931182457*level^5-28.6032587790412*level^4+683.39145837068*level^3-10109.9457236914*level^2+84711.08897931*level-307911.796735007)),9)`
+
+*See RC pages 26 and 267*
