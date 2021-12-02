@@ -38,6 +38,18 @@
 
 ## Thief Special Abilities
 
-`TBD`
-
 *See RC page 22*
+
+### Open Locks
+`if(level>17,2*level+48,if(level>11,3*level+30,if(level>7,4*level+18,5*level+10)))`
+
+### Find Traps
+`if(level>23,level+74,if(level>20,2*level+50,if(level>16,3*level+29,if(level>13,3*level+28,if(level>8,4*level+14,5*level+5)))))`
+
+## Thief Special Abilities - Bruce Heard's Revised Thief Class
+
+*See https://bruce-heard.blogspot.com/2021/01/ThiefSkillsRevised.html*
+
+### Open Locks
+`if(level>4,2*level+48,5*level+35)`
+
