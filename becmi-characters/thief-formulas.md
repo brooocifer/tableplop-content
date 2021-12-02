@@ -62,7 +62,7 @@
 `5*level+15`
 
 ### Hear Noise
-`TBD`
+`if(level>15,2*level+58,if(level>11,3*level+42,if(level>4,4*level+30,5*level+25)))`
 
 ## Thief Special Abilities - Bruce Heard's Revised Thief Class
 
@@ -90,4 +90,4 @@
 `if(level>16,4*level+51,5*level+35)`
 
 ### Hear Noise
-`TBD`
+`if(level>4,2*level+58,5*level+45)`
