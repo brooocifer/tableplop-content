@@ -52,6 +52,18 @@
 ### Climb Walls
 `if(level>34,level+84,if(level>32,level+85,level+86))`
 
+### Move Silently
+`if(level>23,level+64,if(level>11,2*level+40,if(level>7,3*level+28,if(level>4,4*level+20,5*level+15))))`
+
+### Hide in Shadows
+`if(level>13,2*level+28,if(level>5,3*level+14,if(level>2,4*level+8,5*level+5)))`
+
+### Pick Pockets
+`TBD`
+
+### Hear Noise
+`TBD`
+
 ## Thief Special Abilities - Bruce Heard's Revised Thief Class
 
 *See https://bruce-heard.blogspot.com/2021/01/ThiefSkillsRevised.html*
@@ -67,3 +79,15 @@
 
 ### Climb Walls
 `level+84`
+
+### Move Silently
+`if(level>11,level+64,round(2.3909*level+47.4727))`
+
+### Hide in Shadows
+`if(level>19,level+64,if(level>6,2*level+44,5*level+25))`
+
+### Pick Pockets
+`TBD`
+
+### Hear Noise
+`TBD`
