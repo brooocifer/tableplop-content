@@ -33,6 +33,6 @@
 *See RC pages 30 and 109*
 
 ## XP by Level
-`TBD, check if matches Fighter`
+`if(level>7,120000*level-840000,1000*round(-0.00009253711978*level^8+0.00214909557889*level^7-0.01742252687057*level^6+0.05573352590168*level^5-0.01017396488955*level^4-0.026319955683*level^3-1.15566942864673*level^2+4.92439916598304*level-3.77260337425398))`
 
 *See RC page 29 and 266*
