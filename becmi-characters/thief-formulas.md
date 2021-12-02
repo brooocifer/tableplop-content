@@ -59,7 +59,7 @@
 `if(level>13,2*level+28,if(level>5,3*level+14,if(level>2,4*level+8,5*level+5)))`
 
 ### Pick Pockets
-`TBD`
+`5*level+15`
 
 ### Hear Noise
 `TBD`
@@ -87,7 +87,7 @@
 `if(level>19,level+64,if(level>6,2*level+44,5*level+25))`
 
 ### Pick Pockets
-`TBD`
+`if(level>16,4*level+51,5*level+35)`
 
 ### Hear Noise
 `TBD`
