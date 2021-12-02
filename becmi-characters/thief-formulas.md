@@ -46,10 +46,19 @@
 ### Find Traps
 `if(level>23,level+74,if(level>20,2*level+50,if(level>16,3*level+29,if(level>13,3*level+28,if(level>8,4*level+14,5*level+5)))))`
 
+### Remove Traps
+`if(level>12,3*level+22,if(level>5,4*level+10,5*level+5))`
+
 ## Thief Special Abilities - Bruce Heard's Revised Thief Class
 
 *See https://bruce-heard.blogspot.com/2021/01/ThiefSkillsRevised.html*
 
 ### Open Locks
 `if(level>4,2*level+48,5*level+35)`
+
+### Find Traps
+`if(level>25,level+74,if(level>7,2*level+48,5*level+25))`
+
+### Remove Traps
+`if(level>6,round(0.000000010503261*level^8-0.000001760580149*level^7+0.00012481088512*level^6-0.004874709695737*level^5+0.11442473955138*level^4-1.64856333921619*level^3+14.2047464194017*level^2-64.3225716051809*level+ 166.552545460566),5*level+20)`
 
