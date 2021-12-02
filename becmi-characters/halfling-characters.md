@@ -31,6 +31,6 @@
 *See RC pages 27, 109, 266 and 267*
 
 ## XP by Level
-`TBD`
+`if(level>18,200000*level-600000,if(level>8,300000*level-2400000,if(level>7,120000,1000*round(0.016666667*level^5-0.25*level^4+1.75*level^3-5.75*level^2+10.23333333*level-6))))`
 
 *See RC page 27 and 266*
