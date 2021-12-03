@@ -1175,7 +1175,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/48ccd0e806c6b780dd48a8b60424457d.png",
       "value": "",
       "rank": -1,
-      "message": "Sword: Roll 1d20 + {melee_th_bonus} + {misc_modifier} > {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d8 + {melee_th_bonus} + {misc_modifier}",
+      "message": "Sword: Roll 1d20 + {melee_th_bonus} + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d8 + {melee_th_bonus} + {misc_modifier}",
       "characterId": 263441
     },
     {
@@ -1187,7 +1187,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/48ccd0e806c6b780dd48a8b60424457d.png",
       "value": "",
       "rank": 0,
-      "message": "Sword: {temp = 1d20} + {melee_th_bonus} + {misc_modifier} > {orary = thaco - ?:Target AC:}?, Damage: {if(temp + melee_th_bonus + misc_modifier > orary and temp != 1 or temp == 20, 1d8 + melee_th_bonus + misc_modifier, 1 == 0 )}",
+      "message": "Sword: {temp = 1d20} + {melee_th_bonus} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + melee_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 1d8 + melee_th_bonus + misc_modifier, 1 == 0 )}",
       "characterId": 263441
     },
     {
@@ -1241,7 +1241,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/cebbc3435dfe760360a80f2664a1168c.png",
       "value": "",
       "rank": 1,
-      "message": "Short Bow & Arrow: Roll 1d20 + {missile_th_bonus} + {misc_modifier} (+1 if < 50', -1 if >=150') > {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
+      "message": "Short Bow & Arrow: Roll 1d20 + {missile_th_bonus} + {misc_modifier} (+1 if < 50', -1 if >=150') >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
       "characterId": 263441
     },
     {
@@ -1253,7 +1253,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/cebbc3435dfe760360a80f2664a1168c.png",
       "value": "",
       "rank": 2,
-      "message": "Short Bow & Arrow: {temp = 1d20} + {missile_th_bonus} + {misc_modifier} (+1 if < 50', -1 if >=150') > {orary = thaco - ?:Target AC:}?, Damage: {if(temp + missile_th_bonus + misc_modifier > orary and temp != 1 or temp == 20, 1d4 + misc_modifier, 1 == 0 )}",
+      "message": "Short Bow & Arrow: {temp = 1d20} + {missile_th_bonus} + {misc_modifier} (+1 if < 50', -1 if >=150') >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + missile_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 1d4 + misc_modifier, 1 == 0 )}",
       "characterId": 263441
     },
     {
