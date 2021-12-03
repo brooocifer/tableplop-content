@@ -407,7 +407,7 @@ For line = 0 to lines-1
 				Print #json,"      ""icon"": ""/images/message.png"","
 				Print #json,"      ""value"": """","
 				Print #json,"      ""rank"": -1,"
-				Print #json,"      ""message"": ""Attack: Roll 1d20 + {misc_modifier} > {target_ac = thaco - ?:Target AC:}?, Damage: Roll " & values(i) & " + {misc_modifier}"","
+				Print #json,"      ""message"": ""Attack: Roll 1d20 + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll " & values(i) & " + {misc_modifier}"","
 				Print #json,"      ""characterId"": 262132"
 				Print #json,"    },"
 				Print #json,"    {"
@@ -419,7 +419,7 @@ For line = 0 to lines-1
 				Print #json,"      ""icon"": ""/images/message.png"","
 				Print #json,"      ""value"": """","
 				Print #json,"      ""rank"": 1,"
-				Print #json,"      ""message"": ""Attack: {temp = 1d20} + {misc_modifier} > {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier > orary and temp !=1 or temp == 20, " & values(i) & " + misc_modifier, 1 == 0 )}"","
+				Print #json,"      ""message"": ""Attack: {temp = 1d20} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier >= orary and temp !=1 or temp == 20, " & values(i) & " + misc_modifier, 1 == 0 )}"","
 				Print #json,"      ""characterId"": 262132"
 				Print #json,"    },"
  
