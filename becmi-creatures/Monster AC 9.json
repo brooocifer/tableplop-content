@@ -379,7 +379,7 @@
       "icon": "/images/message.png",
       "value": "",
       "rank": -1,
-      "message": "Shortsword: Roll 1d20 + {misc_modifier} > {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
+      "message": "Shortsword: Roll 1d20 + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
       "characterId": 262132
     },
     {
@@ -391,7 +391,7 @@
       "icon": "/images/message.png",
       "value": "",
       "rank": 1,
-      "message": "Shortsword: {temp = 1d20} + {misc_modifier} > {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier > orary and temp !=1 or temp == 20, 1d6 + misc_modifier, 1 == 0 )}",
+      "message": "Shortsword: {temp = 1d20} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier >= orary and temp !=1 or temp == 20, 1d6 + misc_modifier, 1 == 0 )}",
       "characterId": 262132
     },
     {
