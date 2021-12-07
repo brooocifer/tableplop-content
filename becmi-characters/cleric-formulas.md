@@ -26,7 +26,7 @@
 *See RC pages 14 and 109*
 
 ## Saving Throw: Rod, Staff or Spell
-`max(2,round(0.097403*ceil(level/4)^2-2.640693*ceil(level/4)+17.785714)`
+`max(2,round(0.097403*ceil(level/4)^2-2.640693*ceil(level/4)+17.785714))`
 
 *See RC pages 14 and 109*
 
