@@ -6,7 +6,7 @@
 *See RC page 106*
 
 ## Saving Throw: Death Ray or Poison
-`max(2,round(0.098485*ceil(level/4)^2-2.101515*ceil(x/4)+12.833333))`
+`max(2,round(0.098485*ceil(level/4)^2-2.101515*ceil(level/4)+12.833333))`
 
 *See RC pages 14 and 109*
 
@@ -16,7 +16,7 @@
 *See RC pages 14 and 109*
 
 ## Saving Throw: Paralysis or Turn to Stone
-`max(2,round(0.108225*ceil(level/4)^2-2.582251*ceil(x/4)+16.595238))`
+`max(2,round(0.108225*ceil(level/4)^2-2.582251*ceil(level/4)+16.595238))`
 
 *See RC pages 14 and 109*
 
