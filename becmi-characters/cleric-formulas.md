@@ -1,7 +1,7 @@
 # Formulas for Cleric Class Characters
 
 ## THAC0
-`if(level<36,round(-1.919473684211*ceil(x/4)+20.49),2)`
+`if(level<36,round(-1.919473684211*ceil(level/4)+20.49),2)`
 
 *See RC page 106*
 
