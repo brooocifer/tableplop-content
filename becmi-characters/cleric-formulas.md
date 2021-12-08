@@ -87,38 +87,41 @@ For the "destroy" scenarios, we are representing the function result as negative
 
 For the output of the formula for "T", we need to ensure that the function result is a value between 0 and 2, since the negative results are used for destroying undead, and a 2d6 roll will always be greater than these numbers). 
 
+Code to support these values:
+`if(turn>12," - ",if(turn>2,turn,if(turn>=0,"T",if(turn>=-2,"D",if(turn>=-3,"D +","D #")))))`
+
 ### Turn Undead: Skeleton
 Determining a single function for this row of the table was difficult, I chose to represent the positive and negative results as two separate functions, determined in the function only by the level of the Cleric (1-3 and 4+ in this row). This is a useful tactic for all of the rows in this table.
 
-`round(if(level>3,0.000804*level^2-0.104242*level-1.451177,2.5*level^2-12.5*level+17))`
+`if(level>3,round(0.000804*level^2-0.104242*level-1.451177),round(2.5*level^2-12.5*level+17))`
 
 ### Turn Undead: Zombie
 
-`round(if(level>4,-0.000022*level^2-0.065104*level-1.649951,1.333333*level^3-9.5*level^2+17.166667*level))`
+`if(level>4,round(-0.000022*level^2-0.065104*level-1.649951),round(1.333333*level^3-9.5*level^2+17.166667*level))`
 
 ### Turn Undead: Ghoul
 
-`round(if(level>5,0.000276*level^2-0.071221*level-1.493846,0.111587*level^5-1.215464*level^4+4.40152*level^3-6.065299*level^2+0.158038*level+13.609618))`
+`if(level>5,round(0.000276*level^2-0.071221*level-1.493846),round(0.111587*level^5-1.215464*level^4+4.40152*level^3-6.065299*level^2+0.158038*level+13.609618))`
 
 ### Turn Undead: Wight
 
-`round(if(level>6,0.002252*level^2-0.143016*level-0.778166,0.063844*level^5-0.81855*level^4+2.979175*level^3+0.012064*level^2-18.930048*levelx+36.032217))`
+`if(level>6,round(0.002252*level^2-0.143016*level-0.778166),round(0.063844*level^5-0.81855*level^4+2.979175*level^3+0.012064*level^2-18.930048*level+36.032217))`
 
 ### Turn Undead: Wraith
 
-`round(if(level>7,0.000764*level^2-0.085094*level-1.093584,0.051211*level^5-0.821954*level^4+3.796812*level^3+0.368181*level^2-41.213591*level+82.947077))`
+`if(level>7,round(0.000764*level^2-0.085094*level-1.093584),round(0.051211*level^5-0.821954*level^4+3.796812*level^3+0.368181*level^2-41.213591*level+82.947077))`
 
 ### Turn Undead: Mummy
 
-`round(if(level>8,-0.05045*level-1.238761,0.044214*level^5-0.8681*level^4+5.112792*level^3-1.982218*level^2-68.606053*level+166.878984))`
+`if(level>8,round(-0.05045*level-1.238761),round(0.044214*level^5-0.8681*level^4+5.112792*level^3-1.982218*level^2-68.606053*level+166.878984))`
 
 ### Turn Undead: Spectre
 
-`round(if(level>10,-0.044242*level-1.216985,-0.2*level^5+7.458333*level^4-109.416667*level^3+789.041667*level^2-2798.883333*level+3920))`
+`if(level>10,round(-0.044242*level-1.216985),round(-0.2*level^5+7.458333*level^4-109.416667*level^3+789.041667*level^2-2798.883333*level+3920))`
 
 ### Turn Undead: Vampire
 
-`round(if(level>12,-0.038155*level-1.250874,0.0583333333*level^6-3.1749999995*level^5+71.1666666563*level^4-840.3749998781*level^3+5511.2749992028*level^2-19027.9499972535*level+27028.9999961051))`
+`if(level>12,round(-0.038155*level-1.250874),round(0.0583333333*level^6-3.1749999995*level^5+71.1666666563*level^4-840.3749998781*level^3+5511.2749992028*level^2-19027.9499972535*level+27028.9999961051))`
 
 ### Turn Undead: Phantom
 
