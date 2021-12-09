@@ -87,8 +87,11 @@ For the "destroy" scenarios, we are representing the function result as negative
 
 For the output of the formula for "T", we need to ensure that the function result is a value between 0 and 2, since the negative results are used for destroying undead, and a 2d6 roll will always be greater than these numbers). 
 
-Code to support these values:
+#### Convert number into original number/text table values
 `if(turn>12," - ",if(turn>2,turn,if(turn>=0,"T",if(turn>=-2,"D",if(turn>=-3,"D +","D #")))))`
+
+#### Message for interpreting results
+`Turn Undead: {temp = 2d6} >= {undead-code} ? {temp >= undead} , HD Turned/Destroyed: {if(temp >= undead and undead > 0, 2d6, if(temp >= undead and undead < 0, @:abs(undead):d6, 0))}`
 
 ### Turn Undead: Skeleton
 Determining a single function for this row of the table was difficult, I chose to represent the positive and negative results as two separate functions, determined in the function only by the level of the Cleric (1-3 and 4+ in this row). This is a useful tactic for all of the rows in this table.
