@@ -1073,9 +1073,10 @@
       "parentId": 4200705,
       "type": "title-section",
       "data": {},
-      "value": "Combat Variables",
+      "value": "Private Properties",
       "rank": 2,
-      "characterId": 263441
+      "characterId": 263441,
+      "private": true
     },
     {
       "id": 4200771,
@@ -1484,7 +1485,7 @@
       "parentId": 4200705,
       "type": "heading",
       "data": {},
-      "value": "Special Abilities",
+      "value": "Misc. Special Abilities",
       "rank": 0,
       "characterId": 263441
     },
