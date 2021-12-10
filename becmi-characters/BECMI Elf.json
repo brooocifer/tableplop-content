@@ -1497,6 +1497,15 @@
       "value": "<p>&nbsp;</p>",
       "rank": 1,
       "characterId": 263441
+    },
+    {
+      "id": 4340822,
+      "parentId": 4200587,
+      "type": "heading",
+      "data": null,
+      "value": "BECMI Character v1.0 by Brucifer - https://github.com/brooocifer/",
+      "rank": -5,
+      "characterId": 263441
     }
   ],
   "private": false,
