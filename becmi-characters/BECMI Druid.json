@@ -1,0 +1,1489 @@
+{
+  "properties": [
+    {
+      "id": 4345418,
+      "parentId": 4345545,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345419,
+      "parentId": 4345418,
+      "type": "number",
+      "data": {},
+      "name": "Rear-Armor-Class",
+      "value": 9,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345420,
+      "parentId": 4345418,
+      "type": "number",
+      "data": {},
+      "name": "Encounter-Move",
+      "value": 40,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345421,
+      "parentId": 4345540,
+      "type": "number",
+      "data": {},
+      "name": "intelligence-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345422,
+      "parentId": 4345541,
+      "type": "number",
+      "data": {},
+      "name": "charisma-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345423,
+      "parentId": 4345477,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 38.99999999999985,
+      "characterId": 265880
+    },
+    {
+      "id": 4345424,
+      "parentId": 4345423,
+      "type": "title-section",
+      "data": {},
+      "value": "Saving Throws",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345425,
+      "parentId": 4345423,
+      "type": "appearance",
+      "data": {
+        "appearances": []
+      },
+      "value": "",
+      "rank": 2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345426,
+      "parentId": 4345539,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345427,
+      "parentId": 4345426,
+      "type": "text",
+      "data": {},
+      "name": "Class",
+      "value": "Druid",
+      "rank": 2,
+      "formula": "\"Druid\"",
+      "characterId": 265880
+    },
+    {
+      "id": 4345428,
+      "parentId": 4345426,
+      "type": "number",
+      "data": {},
+      "name": "Level",
+      "value": 9,
+      "rank": 5,
+      "characterId": 265880
+    },
+    {
+      "id": 4345429,
+      "parentId": 4345426,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 4,
+      "characterId": 265880
+    },
+    {
+      "id": 4345430,
+      "parentId": 4345429,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 46.79603720391009,
+      "characterId": 265880
+    },
+    {
+      "id": 4345431,
+      "parentId": 4345429,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 53.20396279608991,
+      "characterId": 265880
+    },
+    {
+      "id": 4345432,
+      "parentId": 4345475,
+      "type": "text",
+      "data": {},
+      "name": "Gender",
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345433,
+      "parentId": 4345475,
+      "type": "text",
+      "data": {},
+      "name": "Race",
+      "value": "Human",
+      "rank": 1,
+      "formula": "\"Human\"",
+      "characterId": 265880
+    },
+    {
+      "id": 4345434,
+      "parentId": 4345475,
+      "type": "text",
+      "data": {},
+      "name": "Title",
+      "value": "",
+      "rank": 4,
+      "characterId": 265880
+    },
+    {
+      "id": 4345435,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "History",
+      "rank": 3,
+      "characterId": 265880
+    },
+    {
+      "id": 4345436,
+      "parentId": 4345435,
+      "type": "heading",
+      "data": {},
+      "value": "HP By Level",
+      "rank": 6,
+      "characterId": 265880
+    },
+    {
+      "id": 4345437,
+      "parentId": 4345435,
+      "type": "title-section",
+      "data": {},
+      "value": "Initial Abilities",
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345438,
+      "parentId": 4345437,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345439,
+      "parentId": 4345438,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 34.68013468013471,
+      "characterId": 265880
+    },
+    {
+      "id": 4345440,
+      "parentId": 4345439,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Strength",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345441,
+      "parentId": 4345439,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Dexterity",
+      "value": 10,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345442,
+      "parentId": 4345438,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 65.31986531986534,
+      "characterId": 265880
+    },
+    {
+      "id": 4345443,
+      "parentId": 4345442,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345444,
+      "parentId": 4345443,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345445,
+      "parentId": 4345444,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Intelligence",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345446,
+      "parentId": 4345444,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Constitution",
+      "value": 10,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345447,
+      "parentId": 4345443,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345448,
+      "parentId": 4345447,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Charisma",
+      "value": 10,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345449,
+      "parentId": 4345435,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 7,
+      "characterId": 265880
+    },
+    {
+      "id": 4345450,
+      "parentId": 4345449,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345451,
+      "parentId": 4345450,
+      "type": "heading",
+      "data": {},
+      "value": "Level",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345452,
+      "parentId": 4345450,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>1</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345453,
+      "parentId": 4345449,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345454,
+      "parentId": 4345453,
+      "type": "heading",
+      "data": {},
+      "value": "HP",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345455,
+      "parentId": 4345453,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>0</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345456,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Equipment",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345457,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Clothing (includes headwear, cloaks, belts, gloves, shoes, jewelry, etc.)",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345458,
+      "parentId": 4345457,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>None</p>",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345459,
+      "parentId": 4345549,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>None</p>",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345460,
+      "parentId": 4345550,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>None</p>",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345461,
+      "parentId": 4345551,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>None</p>",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345462,
+      "parentId": 4345552,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345463,
+      "parentId": 4345462,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 19.023569023569074,
+      "characterId": 265880
+    },
+    {
+      "id": 4345464,
+      "parentId": 4345463,
+      "type": "number",
+      "data": {},
+      "name": "PP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345465,
+      "parentId": 4345462,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 80.9764309764311,
+      "characterId": 265880
+    },
+    {
+      "id": 4345466,
+      "parentId": 4345465,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345467,
+      "parentId": 4345466,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 24.033867597266397,
+      "characterId": 265880
+    },
+    {
+      "id": 4345468,
+      "parentId": 4345467,
+      "type": "number",
+      "data": {},
+      "name": "GP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345469,
+      "parentId": 4345542,
+      "type": "number",
+      "data": {},
+      "name": "dexterity-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345470,
+      "parentId": 4345544,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-maximum",
+      "value": 0,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345471,
+      "parentId": 4345544,
+      "type": "number",
+      "data": {},
+      "name": "hit-points-temporary",
+      "value": 0,
+      "rank": 2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345472,
+      "parentId": 4345545,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345473,
+      "parentId": 4345472,
+      "type": "number",
+      "data": {},
+      "name": "Armor-Class",
+      "value": 9,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345474,
+      "parentId": 4345426,
+      "type": "text",
+      "data": {},
+      "name": "Alignment",
+      "value": "",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345475,
+      "parentId": 4345539,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345476,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Character",
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345477,
+      "parentId": 4345476,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345478,
+      "parentId": 4345477,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 61.00000000000051,
+      "characterId": 265880
+    },
+    {
+      "id": 4345479,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "wisdom",
+      "value": 0,
+      "rank": -13,
+      "message": "{wisdom < 0 ? '' : \"+\" || ' ' }{wisdom} to Saving Throws vs. Spells",
+      "formula": "round((-7.483032) + (2.396571*wisdom-score) - (0.3875923*(wisdom-score^2)) + (0.03564341*(wisdom-score^3)) - (0.001667064*(wisdom-score^4)) + (0.00003175359*(wisdom-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345480,
+      "parentId": 4345479,
+      "type": "number",
+      "data": {},
+      "name": "wisdom-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345482,
+      "parentId": 4345481,
+      "type": "number",
+      "data": {},
+      "name": "constitution-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345483,
+      "parentId": 4345472,
+      "type": "number",
+      "data": {},
+      "name": "Move",
+      "value": 120,
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345484,
+      "parentId": 4345467,
+      "type": "number",
+      "data": {},
+      "name": "GP Equivalent",
+      "value": 0,
+      "rank": 1,
+      "formula": "(5 * PP) + GP + (0.5 * EP) + (0.1 * SP) + (0.01 * CP)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345485,
+      "parentId": 4345466,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 75.96613240273349,
+      "characterId": 265880
+    },
+    {
+      "id": 4345486,
+      "parentId": 4345485,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345487,
+      "parentId": 4345486,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 33.056480353143016,
+      "characterId": 265880
+    },
+    {
+      "id": 4345488,
+      "parentId": 4345487,
+      "type": "number",
+      "data": {},
+      "name": "EP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345489,
+      "parentId": 4345486,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 66.94351964685697,
+      "characterId": 265880
+    },
+    {
+      "id": 4345490,
+      "parentId": 4345489,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345491,
+      "parentId": 4345490,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345492,
+      "parentId": 4345491,
+      "type": "number",
+      "data": {},
+      "name": "CP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345493,
+      "parentId": 4345490,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 50,
+      "characterId": 265880
+    },
+    {
+      "id": 4345494,
+      "parentId": 4345493,
+      "type": "number",
+      "data": {},
+      "name": "SP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345495,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Armor & Weapons",
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345496,
+      "parentId": 4345495,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>None</p>",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345497,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Spells",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345498,
+      "parentId": 4345497,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345499,
+      "parentId": 4345498,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 8.666666666666694,
+      "characterId": 265880
+    },
+    {
+      "id": 4345500,
+      "parentId": 4345499,
+      "type": "heading",
+      "data": {},
+      "value": "Level",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345501,
+      "parentId": 4345499,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345502,
+      "parentId": 4345498,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 91.33333333333339,
+      "characterId": 265880
+    },
+    {
+      "id": 4345515,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Special Abilities",
+      "rank": 2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345520,
+      "parentId": null,
+      "type": "tab-section",
+      "data": {},
+      "value": "Actions",
+      "rank": 4,
+      "characterId": 265880
+    },
+    {
+      "id": 4345529,
+      "parentId": 4345430,
+      "type": "number",
+      "data": {},
+      "name": "XP",
+      "value": 0,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345532,
+      "parentId": 4345431,
+      "type": "text",
+      "data": {},
+      "name": "XP-Bonus",
+      "value": "0",
+      "rank": 0,
+      "formula": "if(wisdom-score>= 16, \"+ 10%\", if (wisdom-score >= 13, \"+ 5%\", \"0\"))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345533,
+      "parentId": 4345424,
+      "type": "number",
+      "data": {},
+      "name": "Death Ray or Poison",
+      "value": 7,
+      "rank": -3,
+      "message": "Save vs. Death Ray or Poison: {temp = 1d20} >= {death_ray_or_poison} ? {temp >= death_ray_or_poison ? 1==1: 1==0}",
+      "formula": "max(2,round(0.098485*ceil(level/4)^2-2.101515*ceil(level/4)+12.833333))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345535,
+      "parentId": 4345497,
+      "type": "heading",
+      "data": {},
+      "value": "Available Spells per Day",
+      "rank": -2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345536,
+      "parentId": 4345497,
+      "type": "table",
+      "data": {
+        "headers": [
+          "Level 1",
+          "Level 2",
+          "Level 3",
+          "Level 4",
+          "Level 5",
+          "Level 6",
+          "Level 7"
+        ]
+      },
+      "value": "",
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345537,
+      "parentId": 4345515,
+      "type": "heading",
+      "data": {},
+      "value": "Misc. Special Abilities",
+      "rank": 5,
+      "characterId": 265880
+    },
+    {
+      "id": 4345538,
+      "parentId": 4345515,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": 6,
+      "characterId": 265880
+    },
+    {
+      "id": 4345539,
+      "parentId": 4345476,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345540,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "intelligence",
+      "value": 0,
+      "rank": -14,
+      "message": "{intelligence < 0 ? '' : \"+\" || ' ' }{intelligence} Language(s)",
+      "formula": "round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345547,
+      "parentId": 4345424,
+      "type": "number",
+      "data": {},
+      "name": "Magic Wands",
+      "value": 8,
+      "rank": -1,
+      "message": "Save vs. Magic Wands: {temp = 1d20} >= {magic_wands} ? {temp >= magic_wands ? 1==1 : 1==0}",
+      "formula": "max(2,round(0.069397*ceil(level/4)^2-1.872622*ceil(level/4)+13.483297))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345548,
+      "parentId": 4345447,
+      "type": "number",
+      "data": {},
+      "name": "Initial-Wisdom",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345549,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Containers (includes belt pouches, scroll cases, quivers, missile ammo, sacks, bags, backpacks)",
+      "rank": 3,
+      "characterId": 265880
+    },
+    {
+      "id": 4345550,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Misc. Equipment (flasks, poles, ropes, lanterns, torches, etc.)",
+      "rank": 4,
+      "characterId": 265880
+    },
+    {
+      "id": 4345551,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Treasures, Gems, etc.",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345552,
+      "parentId": 4345456,
+      "type": "title-section",
+      "data": {},
+      "value": "Coins",
+      "rank": -2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345596,
+      "parentId": 4345478,
+      "type": "heading",
+      "data": null,
+      "value": "BECMI Character v1.0 by Brucifer - https://github.com/brooocifer/",
+      "rank": -5,
+      "characterId": 265880
+    },
+    {
+      "id": 4345534,
+      "parentId": 4345475,
+      "type": "number",
+      "data": {},
+      "name": "Next-Level-XP",
+      "value": 300000,
+      "rank": 3,
+      "formula": "if(level+1>7,100000*(level+1)-700000,100*round(-0.055556*(level+1)^6+1.375*(level+1)^5-12.847222*(level+1)^4+61.041667*(level+1)^3-152.097222*(level+1)^2+197.583333*(level+1)-95))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345481,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "constitution",
+      "value": 0,
+      "rank": -11,
+      "message": "{constitution < 0 ? '' : \"+\" || ' ' }{constitution} to Hit Points/Level",
+      "formula": "round((-7.483032) + (2.396571*constitution-score) - (0.3875923*(constitution-score^2)) + (0.03564341*(constitution-score^3)) - (0.001667064*(constitution-score^4)) + (0.00003175359*(constitution-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345541,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "charisma",
+      "value": 0,
+      "rank": -10,
+      "message": "{charisma < 0 ? '' : \"+\" || ' ' }{charisma} to Reactions",
+      "formula": "round((-7.483032) + (2.396571*charisma-score) - (0.3875923*(charisma-score^2)) + (0.03564341*(charisma-score^3)) - (0.001667064*(charisma-score^4)) + (0.00003175359*(charisma-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345542,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "dexterity",
+      "value": 0,
+      "rank": -12,
+      "message": "{dexterity < 0 ? '' : \"+\" || ' ' }{dexterity} to Missile Attack Rolls, {-dexterity < 0 ? '' : \"+\" || ' ' }{-dexterity} to AC",
+      "formula": "round((-7.483032) + (2.396571*dexterity-score) - (0.3875923*(dexterity-score^2)) + (0.03564341*(dexterity-score^3)) - (0.001667064*(dexterity-score^4)) + (0.00003175359*(dexterity-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345543,
+      "parentId": 4345478,
+      "type": "heading",
+      "data": {},
+      "value": "Abilities",
+      "rank": -16,
+      "characterId": 265880
+    },
+    {
+      "id": 4345544,
+      "parentId": 4345478,
+      "type": "health",
+      "data": {},
+      "name": "hit-points",
+      "value": 0,
+      "rank": -7,
+      "characterId": 265880
+    },
+    {
+      "id": 4345545,
+      "parentId": 4345478,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -6,
+      "characterId": 265880
+    },
+    {
+      "id": 4345546,
+      "parentId": 4345478,
+      "type": "ability",
+      "data": {},
+      "name": "strength",
+      "value": 0,
+      "rank": -15,
+      "message": "{strength < 0 ? '' : \"+\" || ' ' }{strength} to Attack, Damage, and Open Doors",
+      "formula": "round((-7.483032) + (2.396571*strength-score) - (0.3875923*(strength-score^2)) + (0.03564341*(strength-score^3)) - (0.001667064*(strength-score^4)) + (0.00003175359*(strength-score^5)))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345585,
+      "parentId": 4345424,
+      "type": "number",
+      "data": {},
+      "name": "Rod Staff or Spell",
+      "value": 11,
+      "rank": 4,
+      "message": "Save vs. Rod, Staff, or Spell: {temp = 1d20} >= {rod_staff_or_spell} ? {temp >= rod_staff_or_spell ? 1==1 : 1==0}",
+      "formula": "max(2,round(0.097403*ceil(level/4)^2-2.640693*ceil(level/4)+17.785714))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345586,
+      "parentId": 4345424,
+      "type": "number",
+      "data": {},
+      "name": "Paralysis or Turn to Stone",
+      "value": 10,
+      "rank": 1,
+      "message": "Save vs. Paralysis or Turn to Stone: {temp = 1d20} >= {paralysis_or_turn_to_stone} ? {temp >= paralysis_or_turn_to_stone ? 1==1 : 1==0}",
+      "formula": "max(2,round(0.108225*ceil(level/4)^2-2.582251*ceil(level/4)+16.595238))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345590,
+      "parentId": 4345424,
+      "type": "number",
+      "data": {},
+      "name": "Dragon Breath",
+      "value": 12,
+      "rank": 3,
+      "message": "Save vs. Dragon Breath: {temp = 1d20} >= {dragon_breath} ? {temp >= dragon_breath ? 1==1 : 1==0}",
+      "formula": "max(2,round(0.069397*ceil(level/4)^2-2.515309*ceil(level/4)+18.696731))",
+      "characterId": 265880
+    },
+    {
+      "id": 4345503,
+      "parentId": 4345502,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345504,
+      "parentId": 4345503,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 30.87634308725508,
+      "characterId": 265880
+    },
+    {
+      "id": 4345507,
+      "parentId": 4345503,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 69.12365691274503,
+      "characterId": 265880
+    },
+    {
+      "id": 4345505,
+      "parentId": 4345504,
+      "type": "heading",
+      "data": {},
+      "value": "Spell Name",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345506,
+      "parentId": 4345504,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345508,
+      "parentId": 4345507,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345509,
+      "parentId": 4345508,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 48.20782675658647,
+      "characterId": 265880
+    },
+    {
+      "id": 4345512,
+      "parentId": 4345508,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 51.79217324341353,
+      "characterId": 265880
+    },
+    {
+      "id": 4345510,
+      "parentId": 4345509,
+      "type": "heading",
+      "data": {},
+      "value": "Form (Book, Scroll, Known, etc.)",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345511,
+      "parentId": 4345509,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345513,
+      "parentId": 4345512,
+      "type": "heading",
+      "data": {},
+      "value": "Description/Notes",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345514,
+      "parentId": 4345512,
+      "type": "paragraph",
+      "data": {},
+      "value": "<p>&nbsp;</p>",
+      "rank": 1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345516,
+      "parentId": 4345515,
+      "type": "title-section",
+      "data": {},
+      "private": true,
+      "value": "Private Properties",
+      "rank": 7,
+      "characterId": 265880
+    },
+    {
+      "id": 4345517,
+      "parentId": 4345516,
+      "type": "number",
+      "data": {},
+      "name": "temp",
+      "value": 10,
+      "rank": -2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345518,
+      "parentId": 4345516,
+      "type": "number",
+      "data": {},
+      "name": "orary",
+      "value": 6,
+      "rank": -1,
+      "characterId": 265880
+    },
+    {
+      "id": 4345519,
+      "parentId": 4345516,
+      "type": "number",
+      "data": {},
+      "name": "Target AC",
+      "value": "Invalid roll syntax: Check for missing + signs and unclosed brackets (...)",
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345521,
+      "parentId": 4345520,
+      "type": "horizontal-section",
+      "data": {},
+      "value": "",
+      "rank": -2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345526,
+      "parentId": 4345520,
+      "type": "message",
+      "data": {},
+      "name": "mace",
+      "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/4ca4b662c5d92eb9e0df665a078f479f.png",
+      "value": "",
+      "rank": -1,
+      "message": "Mace: Roll 1d20 + {melee_th_bonus} + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {melee_th_bonus} + {misc_modifier}",
+      "characterId": 265880
+    },
+    {
+      "id": 4345527,
+      "parentId": 4345520,
+      "type": "message",
+      "data": {},
+      "name": "macefull",
+      "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/4ca4b662c5d92eb9e0df665a078f479f.png",
+      "value": "",
+      "rank": 0,
+      "message": "Mace: {temp = 1d20} + {melee_th_bonus} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + melee_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 1d6 + melee_th_bonus + misc_modifier, 1 == 0 )}",
+      "characterId": 265880
+    },
+    {
+      "id": 4345553,
+      "parentId": 4345520,
+      "type": "message",
+      "data": {},
+      "name": "hammerthrow",
+      "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/dc1c1200e9e44f183ac8474a30ad2ed0.png",
+      "value": "",
+      "rank": 1,
+      "message": "Throwing Hammer: Roll 1d20 + {missile_th_bonus} + {misc_modifier} (+1 if < 10', -1 if >= 30') >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d4 + {misc_modifier}",
+      "characterId": 265880
+    },
+    {
+      "id": 4345554,
+      "parentId": 4345520,
+      "type": "message",
+      "data": {},
+      "name": "hammerthrowfull",
+      "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/dc1c1200e9e44f183ac8474a30ad2ed0.png",
+      "value": "",
+      "rank": 2,
+      "message": "Throwing Hammer: {temp = 1d20} + {missile_th_bonus} + {misc_modifier} (+1 if < 10', -1 if >= 30') >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + missile_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 1d4 + misc_modifier, 1 == 0 )}",
+      "characterId": 265880
+    },
+    {
+      "id": 4345522,
+      "parentId": 4345521,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 0,
+      "size": 49.666666666666664,
+      "characterId": 265880
+    },
+    {
+      "id": 4345523,
+      "parentId": 4345521,
+      "type": "section",
+      "data": {},
+      "value": "",
+      "rank": 1,
+      "size": 50.333333333333364,
+      "characterId": 265880
+    },
+    {
+      "id": 4345528,
+      "parentId": 4345522,
+      "type": "text",
+      "data": {},
+      "name": "Melee TH Bonus",
+      "value": "0",
+      "rank": 0,
+      "formula": "strength",
+      "characterId": 265880
+    },
+    {
+      "id": 4345531,
+      "parentId": 4345522,
+      "type": "number",
+      "data": {},
+      "name": "THACO",
+      "value": 15,
+      "rank": 1,
+      "formula": "if(level<36,round(20.49-1.919473684211*ceil(level/4)),2)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345524,
+      "parentId": 4345523,
+      "type": "number",
+      "data": {},
+      "name": "Missile TH Bonus",
+      "value": 0,
+      "rank": -1,
+      "formula": "dexterity",
+      "characterId": 265880
+    },
+    {
+      "id": 4345525,
+      "parentId": 4345523,
+      "type": "number",
+      "data": {},
+      "name": "Misc Modifier (Missile Range, Magic, Curse, etc.)",
+      "value": "",
+      "rank": 2,
+      "characterId": 265880
+    },
+    {
+      "id": 4345530,
+      "parentId": 4345546,
+      "type": "number",
+      "data": {},
+      "name": "strength-score",
+      "value": 10,
+      "rank": 0,
+      "characterId": 265880
+    },
+    {
+      "id": 4345555,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell7",
+      "value": 0,
+      "rank": 3,
+      "formula": "if(level<36,round(0.00000000032606*level^8-0.00000008897457*level^7+0.00000825616794*level^6-0.00036656278123*level^5+0.00857531604651*level^4-0.10551810847186*level^3+0.6427123495*level^2-1.67443535139322*level+1.29380965503312),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345556,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell1",
+      "value": 3,
+      "rank": -3,
+      "formula": "if(level<32,round(-1.271352152691+0.000000007581*level^7-0.000001203698*level^6+0.000076079056*level^5-0.002430497581*level^4+0.041070990538*level^3-0.354213229428*level^2+1.704725602748*level),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345557,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell2",
+      "value": 3,
+      "rank": -2,
+      "formula": "if(level<33,max(0,round(-0.58058265827352+0.00000000213078*level^8-0.00000030652205*level^7+0.00001805385048*level^6-0.00056122143108*level^5+0.00989323893182*level^4-0.0984488901955*level^3+0.50299308517936*level^2-0.57331345643666*level)),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345558,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell4",
+      "value": 2,
+      "rank": -1,
+      "formula": "if(level<35,if(level % 2,round(-0.630133217055266-0.00000000412405828804*level^8+0.00000059443365411807*level^7-0.0000349875662627603*level^6+0.00107798701628328*level^5-0.0184603367598047*level^4+0.170739654204282*level^3-0.745972371288857*level^2+1.28072909707652*level),round(-1.26454291756812-0.0000000023499*level^8+0.00000036853516*level^7-0.00002360852208*level^6+0.00079218642935*level^5-0.01481016129441*level^4+0.15085963308063*level^3-0.75052958786084*level^2+1.64718792717418*level)),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345559,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell5",
+      "value": 0,
+      "rank": 1,
+      "formula": "if(level<35,round(-1.09831375795249-0.00000000096141*level^8+0.0000001711215*level^7-0.00001250774547*level^6+0.00048167385055*level^5-0.01039624685982*level^4+0.1228003525783*level^3-0.70396324386476*level^2+1.63614906384632*level),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345560,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell6",
+      "value": 0,
+      "rank": 2,
+      "formula": "if(level<36,max(0,min(9,round(-6.39068774283907+0.0000000011391434*level^8-0.000000103015731*level^7+0.0000013139558879*level^6+0.0001598680793381*level^5-0.0077174548513549*level^4+0.145506098603832*level^3-1.27783628345122*level^2+4.95546817190931*level))),9)",
+      "characterId": 265880
+    },
+    {
+      "id": 4345591,
+      "parentId": 4345536,
+      "type": "number",
+      "data": {},
+      "name": "spell3",
+      "value": 3,
+      "rank": -1,
+      "formula": "if(level<34,max(0,round(-1.47210605669151+0.000000000364712111*level^8-0.0000000334762649*level^7+0.000000751363626425*level^6+0.000014657632447817*level^5-0.000797759824530925*level^4+0.00956894469145632*level^3-0.0283731277721411*level^2+0.383768752871907*level)),9)",
+      "characterId": 265880
+    }
+  ],
+  "private": false,
+  "type": "tableplop-character-v2"
+}
