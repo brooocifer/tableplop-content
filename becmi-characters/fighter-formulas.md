@@ -1,7 +1,7 @@
 # Formulas for Fighter Class Characters
 
 ## THAC0
-`if(level<31,round(-1.899*ceil(level/3)+20.49),round(-1*ceil(x/3)+13))`
+`if(level<31,round(-1.899*ceil(level/3)+20.49),round(-1*ceil(level/3)+13))`
 
 *See RC page 106*
 
