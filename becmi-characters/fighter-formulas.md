@@ -28,7 +28,7 @@
 *See RC pages 17 and 109*
 
 ## Saving Throw: Rod, Staff, or Spell
-`round(-0.001782698*ceil(level/3)^3+0.088913492*ceil(level/3)^2-2.077130794*ceil(level/3)+17.49)`
+`round(-0.001782698*ceil(level/3)^3+0.088913492*ceil(level/3)^2-2.077130794*ceil(level/3)+17.49000000000002)`
 
 *See RC pages 17 and 109*
 
