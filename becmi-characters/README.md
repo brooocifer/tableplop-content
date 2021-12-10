@@ -6,9 +6,11 @@ Templates and associated utilities for representing BECMI characters in Tableplo
 
 # Index
 - BECMI Cleric.json - Tableplop template file for Cleric class characters
+- BECMI Druid.json - Tableplop template file for Druid class characters
 - BECMI Dwarf.json - Tableplop template file for Dwarf class characters
 - BECMI Elf.json - Tableplop template file for Elf class characters
 - BECMI Fighter.json - Tableplop template file for Fighter class characters 
+- BECMI Halfling.json - Tableplop template file for Halfling class characters
 - BECMI Magic-User.json - Tableplop template file for Magic-User class characters
 - BECMI Thief.json - Tableplop template file for Thief class characters
 - README.md - this file
