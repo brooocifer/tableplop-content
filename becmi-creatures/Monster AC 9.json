@@ -375,11 +375,11 @@
       "parentId": 4119075,
       "type": "message",
       "data": {},
-      "name": "attack1",
+      "name": "attack",
       "icon": "/images/message.png",
       "value": "",
       "rank": -1,
-      "message": "Shortsword: Roll 1d20 + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
+      "message": "Attack: Roll 1d20 + {misc_modifier} >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 1d6 + {misc_modifier}",
       "characterId": 262132
     },
     {
@@ -387,11 +387,11 @@
       "parentId": 4119075,
       "type": "message",
       "data": {},
-      "name": "attack1full",
+      "name": "attackfull",
       "icon": "/images/message.png",
       "value": "",
       "rank": 1,
-      "message": "Shortsword: {temp = 1d20} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier >= orary and temp !=1 or temp == 20, 1d6 + misc_modifier, 1 == 0 )}",
+      "message": "Attack: {temp = 1d20} + {misc_modifier} >= {orary = thaco - ?:Target AC:}?, Damage {if(temp + misc_modifier >= orary and temp !=1 or temp == 20, 1d6 + misc_modifier, 1 == 0 )}",
       "characterId": 262132
     },
     {
@@ -405,41 +405,32 @@
     },
     {
       "id": 4172577,
-      "parentId": 4172568,
+      "parentId": 4340825,
       "type": "number",
       "data": {},
       "name": "Target AC",
       "value": "",
-      "rank": 3,
-      "characterId": 262132
-    },
-    {
-      "id": 4172569,
-      "parentId": 4172568,
-      "type": "heading",
-      "data": {},
-      "value": "Combat Variables",
-      "rank": 0,
+      "rank": 2,
       "characterId": 262132
     },
     {
       "id": 4172575,
-      "parentId": 4172568,
+      "parentId": 4340825,
       "type": "number",
       "data": {},
       "name": "temp",
       "value": 20,
-      "rank": 1,
+      "rank": 0,
       "characterId": 262132
     },
     {
       "id": 4172576,
-      "parentId": 4172568,
+      "parentId": 4340825,
       "type": "number",
       "data": {},
       "name": "orary",
       "value": 17,
-      "rank": 2,
+      "rank": 1,
       "characterId": 262132
     },
     {
@@ -449,6 +440,43 @@
       "data": {},
       "name": "Misc Modifier (Missile Range, Magic, Curse, etc.)",
       "rank": -3,
+      "characterId": 262132
+    },
+    {
+      "id": 4340823,
+      "parentId": 4119043,
+      "type": "heading",
+      "data": null,
+      "value": "BECMI Monster v1.0 by Brucifer - https://github.com/brooocifer/",
+      "rank": 4,
+      "characterId": 262132
+    },
+    {
+      "id": 4340825,
+      "parentId": 4172568,
+      "type": "title-section",
+      "data": null,
+      "private": true,
+      "value": "Private Properties",
+      "rank": 5,
+      "characterId": 262132
+    },
+    {
+      "id": 4340826,
+      "parentId": 4172568,
+      "type": "heading",
+      "data": null,
+      "value": "Misc. Special Abilities",
+      "rank": 3,
+      "characterId": 262132
+    },
+    {
+      "id": 4340827,
+      "parentId": 4172568,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>&nbsp;</p>",
+      "rank": 4,
       "characterId": 262132
     }
   ],
