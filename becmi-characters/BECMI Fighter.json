@@ -987,7 +987,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/cebbc3435dfe760360a80f2664a1168c.png",
       "value": "",
       "rank": 1,
-      "message": "Crossbow, Heavy: Roll 1d20 + {missile_th_bonus} + {misc_modifier} (+1 if < 10', -1 if >= 30') >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 2d4 + {misc_modifier}",
+      "message": "Crossbow, Heavy: Roll 1d20 + {missile_th_bonus} + {misc_modifier} (+1 if < 80', -1 if >= 240') >= {target_ac = thaco - ?:Target AC:}?, Damage: Roll 2d4 + {misc_modifier}",
       "characterId": 265755
     },
     {
@@ -999,7 +999,7 @@
       "icon": "https://tableplop-files-prod.nyc3.cdn.digitaloceanspaces.com/cebbc3435dfe760360a80f2664a1168c.png",
       "value": "",
       "rank": 2,
-      "message": "Crossbow, Heavy: {temp = 1d20} + {missile_th_bonus} + {misc_modifier} (+1 if < 10', -1 if >= 30') >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + missile_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 2d4 + misc_modifier, 1 == 0 )}",
+      "message": "Crossbow, Heavy: {temp = 1d20} + {missile_th_bonus} + {misc_modifier} (+1 if < 80', -1 if >= 240') >= {orary = thaco - ?:Target AC:}?, Damage: {if(temp + missile_th_bonus + misc_modifier >= orary and temp != 1 or temp == 20, 2d4 + misc_modifier, 1 == 0 )}",
       "characterId": 265755
     },
     {
