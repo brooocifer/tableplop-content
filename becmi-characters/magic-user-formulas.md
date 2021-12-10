@@ -26,7 +26,7 @@
 *See RC page 19 and 109*
 
 ## Saving Throw: Rod, Staff, or Spell
-`if(level<21,round(-3*ceil(level/5)+18),round(-0.7*ceil(x/4)+8))`
+`if(level<21,round(-3*ceil(level/5)+18),round(-0.7*ceil(level/4)+8))`
 
 *See RC page 19 and 109*
 
