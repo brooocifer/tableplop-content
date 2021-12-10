@@ -1840,6 +1840,15 @@
       "message": "Turn Vampire: {temp = 2d6} >= {vampire-code} ? {temp >= vampire} , HD Turned/Destroyed: {if(temp >= vampire and vampire > 0, 2d6, if(temp >= vampire and vampire < 0, @:abs(vampire):d6, 0))}",
       "formula": "if(vampire>12,\" - \",if(vampire>2,vampire,if(vampire>=0,\"T\",if(vampire>=-2,\"D\",if(vampire>=-3,\"D +\",\"D #\")))))",
       "characterId": 265318
+    },
+    {
+      "id": 4340821,
+      "parentId": 4326809,
+      "type": "heading",
+      "data": null,
+      "value": "BECMI Character v1.0 by Brucifer - https://github.com/brooocifer/",
+      "rank": -5,
+      "characterId": 265318
     }
   ],
   "private": false,
