@@ -16,3 +16,7 @@ For example:
 | Bonus/Penalty | -3 | -2 | -2 | -1 | -1 | -1 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 2 | 2 | 3 |
 
 *See RC page 9*
+
+For tableplop expr-eval, and to handle boundaries:
+
+`if(ability-score<19,max(-3,round((-7.483032)+(2.396571*ability-score)-(0.3875923*(ability-score^2))+(0.03564341*(ability-score^3))-(0.001667064*(ability-score^4))+(0.00003175359*(ability-score^5)))),3)`
