@@ -1,0 +1,1721 @@
+{
+  "properties" : [
+    {
+      "id" : 34701267,
+      "parentId" : null,
+      "type" : "tab-section",
+      "data" : {},
+      "value" : "Combat",
+      "rank" : -14,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701269,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Primary Melee Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -11,
+      "message" : "Primary Melee Weapon {primary_name} To Hit: {1d20 + primary_bonus+strength+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus+strength}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701279,
+      "parentId" : null,
+      "type" : "tab-section",
+      "data" : {},
+      "value" : "Character",
+      "rank" : -15,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701282,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Abilities",
+      "rank" : -23,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701283,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "dexterity",
+      "value" : 0,
+      "rank" : 8,
+      "message" : "dexterity check: {1d20 + dexterity}",
+      "formula" : "if(dexterity-score<19,max(-3,round((-7.483032) + (2.396571*dexterity-score) - (0.3875923*(dexterity-score^2)) + (0.03564341*(dexterity-score^3)) - (0.001667064*(dexterity-score^4)) + (0.00003175359*(dexterity-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701284,
+      "parentId" : 34701283,
+      "type" : "number",
+      "data" : {},
+      "name" : "dexterity-score",
+      "value" : 10,
+      "rank" : -13,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701286,
+      "parentId" : 34701285,
+      "type" : "number",
+      "data" : {},
+      "name" : "constitution-score",
+      "value" : 10,
+      "rank" : -11,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701287,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "intelligence",
+      "value" : 0,
+      "rank" : 4,
+      "message" : "intelligence check: {1d20 + intelligence}",
+      "formula" : "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701288,
+      "parentId" : 34701287,
+      "type" : "number",
+      "data" : {},
+      "name" : "intelligence-score",
+      "value" : 10,
+      "rank" : -9,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701289,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "wisdom",
+      "value" : 0,
+      "rank" : 6,
+      "message" : "wisdom check: {1d20 + wisdom}",
+      "formula" : "if(wisdom-score<19,max(-3,round((-7.483032) + (2.396571*wisdom-score) - (0.3875923*(wisdom-score^2)) + (0.03564341*(wisdom-score^3)) - (0.001667064*(wisdom-score^4)) + (0.00003175359*(wisdom-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701290,
+      "parentId" : 34701289,
+      "type" : "number",
+      "data" : {},
+      "name" : "wisdom-score",
+      "value" : 10,
+      "rank" : -2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701291,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "charisma",
+      "value" : 0,
+      "rank" : 12,
+      "message" : "charisma check: {1d20 + charisma}",
+      "formula" : "if(charisma-score<19,max(-3,round((-7.483032) + (2.396571*charisma-score) - (0.3875923*(charisma-score^2)) + (0.03564341*(charisma-score^3)) - (0.001667064*(charisma-score^4)) + (0.00003175359*(charisma-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701292,
+      "parentId" : 34701291,
+      "type" : "number",
+      "data" : {},
+      "name" : "charisma-score",
+      "value" : 10,
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701293,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "strength",
+      "value" : 0,
+      "rank" : -2,
+      "message" : "strength check: {1d20 + strength}",
+      "formula" : "if(strength-score<19,max(-3,round((-7.483032) + (2.396571*strength-score) - (0.3875923*(strength-score^2)) + (0.03564341*(strength-score^3)) - (0.001667064*(strength-score^4)) + (0.00003175359*(strength-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701294,
+      "parentId" : 34701293,
+      "type" : "number",
+      "data" : {},
+      "name" : "strength-score",
+      "value" : 10,
+      "rank" : -15,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701295,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Info",
+      "rank" : -21,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701296,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : {},
+      "name" : "Level",
+      "value" : 1,
+      "rank" : 98,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701297,
+      "parentId" : 34701295,
+      "type" : "text",
+      "data" : {},
+      "name" : "Class",
+      "value" : "Cleric",
+      "rank" : 88,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701298,
+      "parentId" : 34701295,
+      "type" : "text",
+      "data" : {},
+      "name" : "Race",
+      "value" : "Human",
+      "rank" : 87,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701299,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : {},
+      "name" : "Armor Class",
+      "value" : 11,
+      "rank" : 89,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701300,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : {},
+      "name" : "Attack Bonus",
+      "value" : 1,
+      "rank" : 90,
+      "formula" : "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Thief\",class)==0,if(level<=20,round(-0.0000248351*(level^5)+0.0013366027*(level^4)-0.025988336*(level^3)+0.2114431262*(level^2)-0.1982556036*level+0.9629514964),8),if(indexOf(\"Fighter\",class)==0,if(level<=20,round(-0.0000151304*(level^5)+0.0007378592*(level^4)-0.0120340447*(level^3)+0.0589040704*(level^2)+0.6512518791*level+0.1555227381),10),if(indexOf(\"Magic-User\",class)==0,if(level<=20,round(-0.0000294342*(level^5)+0.0016168058*(level^4)-0.0317729965*(level^3)+0.264696883*(level^2)-0.5202533336*level+1.218627451),7),0)))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701305,
+      "parentId" : 34701304,
+      "type" : "number",
+      "data" : {},
+      "name" : "hit_points-maximum",
+      "value" : 10,
+      "rank" : 102,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701306,
+      "parentId" : 34701304,
+      "type" : "number",
+      "data" : {},
+      "name" : "hit_points-temporary",
+      "value" : 0,
+      "rank" : 104,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701311,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Saving Throws",
+      "rank" : -19,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701325,
+      "parentId" : 34833146,
+      "type" : "number",
+      "data" : {},
+      "name" : "Dark Vision (feet)",
+      "value" : 0,
+      "rank" : -4,
+      "formula" : "if(indexOf(\"Dwarf\",Race)>-1,60,if(indexOf(\"Elf\",Race)>-1,60,0))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701328,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : true
+      },
+      "private" : true,
+      "value" : "Hidden",
+      "rank" : -6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701268,
+      "parentId" : 34701267,
+      "type" : "filter-list",
+      "data" : {},
+      "value" : "",
+      "rank" : -19,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701270,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Primary Bow Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -10,
+      "message" : "Primary Bow Weapon {primary_name} To Hit: {1d20 + primary_bonus+dexterity+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701271,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Primary Thrown Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -9,
+      "message" : "Primary Thrown Weapon {primary_name} To Hit: {1d20 + primary_bonus+dexterity+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus+strength}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701274,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Secondary Melee Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -8,
+      "message" : "Secondary Melee Weapon {secondary_name} To Hit: {1d20 + secondary_bonus+strength+attack_bonus}, Damage: {1d@:secondary_damage:+secondary_bonus+strength}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701275,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Secondary Bow Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -7,
+      "message" : "Secondary Bow Weapon {secondary_name} To Hit: {1d20 + secondary_bonus+dexterity+attack_bonus}, Damage: {1d@:secondary_damage:+secondary_bonus}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701276,
+      "parentId" : 34701268,
+      "type" : "message",
+      "data" : {},
+      "name" : "Secondary Thrown Weapon",
+      "icon" : "/images/message.png",
+      "value" : "",
+      "rank" : -6,
+      "message" : "Secondary Thrown Weapon {secondary_name} To Hit: {1d20 + secondary_bonus+dexterity+attack_bonus}, Damage: {1d@:secondary_damage:+secondary_bonus+strength}",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701304,
+      "parentId" : 34701295,
+      "type" : "health",
+      "data" : {},
+      "name" : "Hit Points",
+      "value" : 10,
+      "rank" : 108,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701309,
+      "parentId" : 34701295,
+      "type" : "appearance",
+      "data" : {
+        "appearances" : []
+      },
+      "value" : "",
+      "rank" : 109,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701301,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : {},
+      "name" : "XP",
+      "value" : 0,
+      "rank" : 99,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701303,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : {},
+      "name" : "Initiative",
+      "value" : 0,
+      "rank" : 91,
+      "message" : "!r initiative = 1d6",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34701285,
+      "parentId" : 34796008,
+      "type" : "ability",
+      "data" : {},
+      "name" : "constitution",
+      "value" : 0,
+      "rank" : 10,
+      "message" : "constitution check: {1d20 + constitution}",
+      "formula" : "if(constitution-score<19,max(-3,round((-7.483032) + (2.396571*constitution-score) - (0.3875923*(constitution-score^2)) + (0.03564341*(constitution-score^3)) - (0.001667064*(constitution-score^4)) + (0.00003175359*(constitution-score^5)))),3)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34796008,
+      "parentId" : 34701282,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "",
+          ""
+        ]
+      },
+      "rank" : -1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34797528,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Attack, Damage &amp; Open Doors</h4>",
+      "rank" : 3,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34798030,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Language(s)</h4>",
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34817542,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Saving Throw vs Spells</h4>",
+      "rank" : 7,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34818246,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Missile Attack Roll &amp; AC Adjustment</h4>",
+      "rank" : 9,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34818945,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Hit Points per Level</h4>",
+      "rank" : 11,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34819879,
+      "parentId" : 34796008,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Reaction Adjustment</h4>",
+      "rank" : 13,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828713,
+      "parentId" : 34701311,
+      "type" : "number",
+      "data" : null,
+      "name" : "Dragon Breath",
+      "value" : 16,
+      "rank" : 3,
+      "message" : "Dragon Breath Saving Throw: {1d20 >= dragon_breath}",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,race_dragon_breath+(-race_paralysis_or_turn_to_stone)+paralysis_or_turn_to_stone+2,if(indexOf(\"Fighter\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000002026*(level^8)+0.0000152076*(level^7)-0.000456995*(level^6)+0.0069861521*(level^5)-0.0566859839*(level^4)+0.2266792207*(level^3)-0.3211940758*(level^2)-0.4657900132*level+15.917346511),9),if(indexOf(\"Magic-User\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+16.3118679051),11),if(indexOf(\"Thief\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000118455*(level^5)+0.0006218872*(level^4)-0.0119908467*(level^3)+0.1034594158*(level^2)-0.8839160048*level+16.7083591331),6),20))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828714,
+      "parentId" : 34701311,
+      "type" : "number",
+      "data" : null,
+      "name" : "Rod Staff or Spell",
+      "value" : 15,
+      "rank" : 4,
+      "message" : "Rod Staff or Spell Saving Throw: {1d20 >= rod_staff_or_spell}",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,race_rod_staff_or_spell+(-race_dragon_breath)+dragon_breath+(-1),if(indexOf(\"Fighter\",class)==0,race_rod_staff_or_spell+(-race_magic_wands)+magic_wand+4,if(indexOf(\"Magic-User\",class)==0,race_dragon_breath+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+14.1215946654),8),if(indexOf(\"Thief\",class)==0,race_rod_staff_or_spell+(-race_death_ray_or_poison)+death_ray_or_poison+2,20))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828715,
+      "parentId" : 34833146,
+      "type" : "number",
+      "data" : null,
+      "name" : "Find Secret Doors",
+      "value" : 1,
+      "rank" : -3,
+      "message" : "Roll for Finding Secret Doors: {1d6 <= find_secret_doors}",
+      "formula" : "if(indexOf(\"Elf\",Race)>-1,2,1)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833146,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Languages and Special Abilities",
+      "rank" : -11,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833153,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Treasure",
+      "rank" : -10,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833166,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "Platinum Pieces",
+      "value" : 0,
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833167,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "Gold Pieces",
+      "value" : 0,
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833168,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "Electrum Pieces",
+      "value" : 0,
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833169,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "Silver Pieces",
+      "value" : 0,
+      "rank" : 3,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833176,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "Copper Pieces",
+      "value" : 0,
+      "rank" : 4,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833191,
+      "parentId" : 34833153,
+      "type" : "number",
+      "data" : null,
+      "name" : "GP Equivalent",
+      "value" : 0,
+      "rank" : 5,
+      "formula" : "roundTo((platinum*5)+(gold)+(electrum/2)+(silver/10)+(copper/100),2)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833212,
+      "parentId" : 34833153,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Treasure",
+          "GP Value"
+        ]
+      },
+      "rank" : 6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833213,
+      "parentId" : 34833212,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<p>&nbsp;</p>",
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833214,
+      "parentId" : 34833212,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<p>&nbsp;</p>",
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833215,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Weapons",
+      "rank" : -9,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833218,
+      "parentId" : 34833221,
+      "type" : "text",
+      "data" : null,
+      "name" : "Primary Name",
+      "value" : "Longsword",
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833219,
+      "parentId" : 34833221,
+      "type" : "number",
+      "data" : null,
+      "name" : "Primary Bonus",
+      "value" : 0,
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833220,
+      "parentId" : 34833221,
+      "type" : "text",
+      "data" : null,
+      "name" : "Primary Damage",
+      "value" : "8",
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833221,
+      "parentId" : 34833215,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "W Label",
+          "Weapon",
+          "Hit Bonus",
+          "Damage"
+        ]
+      },
+      "rank" : -1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833222,
+      "parentId" : 34833221,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Pri. Weapon",
+      "rank" : -1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833223,
+      "parentId" : 34833221,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Sec. Weapon",
+      "rank" : 3,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833224,
+      "parentId" : 34833221,
+      "type" : "text",
+      "data" : null,
+      "name" : "Secondary Name",
+      "value" : "Shortbow",
+      "rank" : 4,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833225,
+      "parentId" : 34833221,
+      "type" : "number",
+      "data" : null,
+      "name" : "Secondary Bonus",
+      "value" : 0,
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833226,
+      "parentId" : 34833221,
+      "type" : "text",
+      "data" : null,
+      "name" : "Secondary Damage",
+      "value" : "6",
+      "rank" : 6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833227,
+      "parentId" : 34833221,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Other Weapons",
+      "rank" : 7,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833228,
+      "parentId" : 34833221,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 8,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833230,
+      "parentId" : 34833221,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 10,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833229,
+      "parentId" : 34833221,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 9,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833348,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Armor",
+      "rank" : -8,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833349,
+      "parentId" : 34833348,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "A Label",
+          "Armor Type",
+          "Armor Bonus"
+        ]
+      },
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833350,
+      "parentId" : 34833349,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Eq. Armor",
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833351,
+      "parentId" : 34833349,
+      "type" : "text",
+      "data" : null,
+      "name" : "Equipped Armor Type",
+      "value" : "Chain Mail",
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833352,
+      "parentId" : 34833349,
+      "type" : "number",
+      "data" : null,
+      "name" : "Equipped Armor Bonus",
+      "value" : 0,
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833353,
+      "parentId" : 34833349,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Eq. Shield",
+      "rank" : 3,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833354,
+      "parentId" : 34833349,
+      "type" : "text",
+      "data" : null,
+      "name" : "Equipped Shield Type",
+      "value" : "Shield",
+      "rank" : 4,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833355,
+      "parentId" : 34833349,
+      "type" : "number",
+      "data" : null,
+      "name" : "Equipped Shield Bonus",
+      "value" : 0,
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833356,
+      "parentId" : 34833349,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Other Armor",
+      "rank" : 6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833357,
+      "parentId" : 34833349,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 7,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833358,
+      "parentId" : 34833349,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 8,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833359,
+      "parentId" : 34701279,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Equipment",
+      "rank" : -7,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833360,
+      "parentId" : 34833359,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "",
+          ""
+        ]
+      },
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833361,
+      "parentId" : 34833360,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833362,
+      "parentId" : 34833360,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>&nbsp;</h4>",
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833389,
+      "parentId" : 34833146,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "",
+          ""
+        ]
+      },
+      "rank" : 4,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833391,
+      "parentId" : 34833389,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<p>Common</p>",
+      "rank" : -1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833392,
+      "parentId" : 34833146,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Thieves Abilities",
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833393,
+      "parentId" : 34833146,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Turn Undead",
+      "rank" : 6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833394,
+      "parentId" : 34833389,
+      "type" : "paragraph",
+      "data" : null,
+      "value" : "<h4>Languages</h4>",
+      "rank" : -2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34833431,
+      "parentId" : 34833146,
+      "type" : "number",
+      "data" : null,
+      "name" : "Dwarf Detection",
+      "value" : 0,
+      "rank" : -2,
+      "message" : "Roll for Dwarf Detection: {1d6 <= dwarf_detection}",
+      "formula" : "if(indexOf(\"Dwarf\",Race)>-1,2,0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34838327,
+      "parentId" : 34833146,
+      "type" : "text",
+      "data" : null,
+      "name" : "Racial Restrictions",
+      "value" : "None",
+      "rank" : -1,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,\"Class may not be Magic-User; Minimum Constitution 9; Maximum Charisma 17; May not employ weapons longer than 4 feet\",if(indexOf(\"Elf\",Race)==0,\"Minimum Intelligence 9; Maximum Constitution 17; Never roll larger than a 6-sided die for hit points.\",if(indexOf(\"Halfling\",Race)==0,\"Class may not be Magic-User; Minimum Dexterity 9; Maximum Strength 17; Never roll larger than a 6-sided die for hit points; May not use Large weapons; Must wield Medium weapons with both hands\",if(indexOf(\"Human\",Race)==0,\"None\",\"see Rules\"))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34838329,
+      "parentId" : 34833146,
+      "type" : "text",
+      "data" : null,
+      "name" : "Racial Special Abilities",
+      "value" : "Gain +10% bonus to XP",
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,\"Dwarf Detection: able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6, a search must be performed before this roll may be made.\",if(indexOf(\"Elf\",Race)==0,\"Has 1 in a 6-sided die chance to find secret doors with a cursory look; Immune to paralyzing attack of ghouls; Less likely to be surprised, reducing the chance by 1 in a 6-sided die chance\",if(indexOf(\"Halfling\",Race)==0,\"Gains +1 Attack Bonus with ranged weapons; +2 AC when attacked in melee by creatures larger than man-sized; +1 to Initiative; Hide Outdoors 90% Success; Hide Indoors 70% Success\",if(indexOf(\"Human\",Race)==0,\"Gain +10% bonus to XP\",\"see Rules\"))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34839359,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Race Death Ray or Poison",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,0))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34839360,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Race Magic Wands",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,0)))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34839361,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Race Paralysis or Turn to Stone",
+      "value" : 0,
+      "rank" : 2,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-1,0)))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34839362,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Race Dragon Breath",
+      "value" : 0,
+      "rank" : 3,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,-3,if(indexOf(\"Halfling\",Race)==0,-3,0))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34839363,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Race Rod Staff or Spell",
+      "value" : 0,
+      "rank" : 4,
+      "formula" : "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,0)))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828705,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : null,
+      "name" : "XP Next Level",
+      "value" : 1500,
+      "rank" : 100,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if((level+1)<=7,round(12.5*((level+1)^5)-187.5*((level+1)^4)+1312.5*((level+1)^3)-4312.5*((level+1)^2)+7675*(level+1)-4500),90000*(level+1)-630000),if(indexOf(\"Fighter\",class)==0,if((level+1)<=7,round(16.6666666667*((level+1)^5)-250*((level+1)^4)+1750*((level+1)^3)-5750*((level+1)^2)+10233.3333333333*(level+1)-6000),120000*(level+1)-840000),if(indexOf(\"Magic-User\",class)==0,if((level+1)<=7,100*round(0.208333*((level+1)^5)-3.125*((level+1)^4)+21.875*((level+1)^3)-71.875*((level+1)^2)+127.916667*(level+1)-75),150000*(level+1)-1050000),if(indexOf(\"Thief\",class)==0,if((level+1)<=7,round(10.4166666667*((level+1)^5)-156.25*((level+1)^4)+1093.75*((level+1)^3)-3593.75*((level+1)^2)+6395.8333333333*(level+1)-3750),75000*(level+1)-525000),0))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899243,
+      "parentId" : 34833392,
+      "type" : "horizontal-section",
+      "data" : null,
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899244,
+      "parentId" : 34899243,
+      "type" : "section",
+      "data" : null,
+      "rank" : 0,
+      "size" : 50,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899245,
+      "parentId" : 34899243,
+      "type" : "section",
+      "data" : null,
+      "rank" : 1,
+      "size" : 50,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899246,
+      "parentId" : 34899244,
+      "type" : "number",
+      "data" : null,
+      "name" : "DM Task Modifier",
+      "value" : 0,
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899247,
+      "parentId" : 34899245,
+      "type" : "heading",
+      "data" : null,
+      "value" : "Ex: -20, -10, -5, +5, +10, +20 (%)",
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899248,
+      "parentId" : 34833392,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Open Locks",
+          "Find Traps",
+          "Remove Traps",
+          "Pick Pockets"
+        ]
+      },
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899249,
+      "parentId" : 34899248,
+      "type" : "number",
+      "data" : null,
+      "name" : "open-locks",
+      "value" : 0,
+      "rank" : 0,
+      "message" : "Open Locks: {1d100 + dm_task_modifier <= open-locks}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,if(level<=20,round(-0.000000181995*(level^8)+0.000019863078*(level^7)-0.000861678596*(level^6)+0.019371721069*(level^5)-0.24373455286*(level^4)+1.708857734311*(level^3)-6.301954256766*(level^2)+15.696698222397*level+13.963505146834),88),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899250,
+      "parentId" : 34899248,
+      "type" : "number",
+      "data" : null,
+      "name" : "find-traps",
+      "value" : 0,
+      "rank" : 1,
+      "message" : "Find Traps: {1d100 + dm_task_modifier <= find-traps}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,open-locks+(-5),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899251,
+      "parentId" : 34899248,
+      "type" : "number",
+      "data" : null,
+      "name" : "remove-traps",
+      "value" : 0,
+      "rank" : 1,
+      "message" : "Remove Traps: {1d100 + dm_task_modifier <= remove-traps}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,find-traps,0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34899252,
+      "parentId" : 34899248,
+      "type" : "number",
+      "data" : null,
+      "name" : "pick-pockets",
+      "value" : 0,
+      "rank" : 1,
+      "message" : "Pick Pockets: {1d100 + dm_task_modifier <= pick-pockets}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,if(level<=19,round(-0.000000565993*(level^8)+0.000052144389*(level^7)-0.001958643165*(level^6)+0.038744502475*(level^5)-0.435029349969*(level^4)+2.777227290333*(level^3)-9.567844155968*(level^2)+20.684218618601*level+16.014590159296),99),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34900728,
+      "parentId" : 34833392,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Move Silently",
+          "Climb Walls",
+          "Hide",
+          "Listen"
+        ]
+      },
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 34900849,
+      "parentId" : 34900728,
+      "type" : "number",
+      "data" : null,
+      "name" : "move-silently",
+      "value" : 0,
+      "rank" : 0,
+      "message" : "Move Silently: {1d100 + dm_task_modifier <= move-silently}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,if(level<=20,round(0.000000030566*(level^8)+0.000000766149*(level^7)-0.000160187799*(level^6)+0.005758942848*(level^5)-0.093025818881*(level^4)+0.751404470113*(level^3)-2.990252167434*(level^2)+10.266386884859*level+16.981779377271),93),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34900850,
+      "parentId" : 34900728,
+      "type" : "number",
+      "data" : null,
+      "name" : "climb-walls",
+      "value" : 0,
+      "rank" : 1,
+      "message" : "Climb Walls: {1d100 + dm_task_modifier <= climb-walls}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,level+79,0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34900887,
+      "parentId" : 34900728,
+      "type" : "number",
+      "data" : null,
+      "name" : "hide-in-shadows",
+      "value" : 0,
+      "rank" : 2,
+      "message" : "Hide: {1d100 + dm_task_modifier <= hide-in-shadows}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,open-locks+(-15),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34900888,
+      "parentId" : 34900728,
+      "type" : "number",
+      "data" : null,
+      "name" : "hear-noise",
+      "value" : 0,
+      "rank" : 3,
+      "message" : "Listen: {1d100 + dm_task_modifier <= hear-noise}",
+      "formula" : "if(indexOf(\"Thief\",class)==0,if(level<=20,round(0.00000006243*(level^8)-0.000004049357*(level^7)+0.000088995274*(level^6)-0.000504611699*(level^5)-0.008143579506*(level^4)+0.12851433111*(level^3)-0.640798366032*(level^2)+5.249457145538*level+25.249071232212),95),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35098139,
+      "parentId" : 34833393,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Skeleton/1 HD",
+          "Zombie/2 HD",
+          "Ghoul/3 HD"
+        ]
+      },
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35098141,
+      "parentId" : 35098139,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-zombie",
+      "value" : 17,
+      "rank" : 1,
+      "message" : "Turn Zombie/2 HD Undead: {turned_roll = 1d20} >= {turn-zombie} ? {turned_roll>=turn-zombie}, HD Damaged: {if(turn-zombie==0,sum(2d6),0)} for {if(turn-zombie==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-zombie>0 and turn-zombie<99,sum(2d6),0)}, for {if(turn-zombie<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000625614*(level^5)-0.003738852*(level^4)+0.0789263956*(level^3)-0.6149553217*(level^2)-0.2486222129*level+17.6237849647),0),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35105771,
+      "parentId" : 34701328,
+      "type" : "number",
+      "data" : null,
+      "name" : "Turned Roll",
+      "value" : 19,
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35098140,
+      "parentId" : 35098139,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-skeleton",
+      "value" : 13,
+      "rank" : 0,
+      "message" : "Turn Skeleton/1 HD Undead: {turned_roll = 1d20} >= {turn-skeleton} ? {turned_roll>=turn-skeleton}, HD Damaged: {if(turn-skeleton==0,sum(2d6),0)} for {if(turn-skeleton==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-skeleton>0 and turn-skeleton<99,sum(2d6),0)}, for {if(turn-skeleton<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000504622*(level^5)-0.0026534601*(level^4)+0.0458096666*(level^3)-0.2022098938*(level^2)-1.8776216664*level+15.1859207251),0),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828711,
+      "parentId" : 34701311,
+      "type" : "number",
+      "data" : null,
+      "name" : "Magic Wands",
+      "value" : 12,
+      "rank" : 1,
+      "message" : "Magic Wands Saving Throw: {1d20 >= magic_wands}",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,race_magic_wands+if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+12.9583591331),6),if(indexOf(\"Fighter\",class)==0,race_magic_wands+if(level<=19,round(-0.0000002989*(level^8)+0.0000232422*(level^7)-0.0007310049*(level^6)+0.0118833669*(level^5)-0.1053258172*(level^4)+0.4855565021*(level^3)-0.933699521*(level^2)-0.3398406655*level+13.9684975507),6),if(indexOf(\"Magic-User\",class)==0,race_magic_wands+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+13.3690402477),6),if(indexOf(\"Thief\",class)==0,race_magic_wands+if(level<=11,round(-0.2363636364*level+14.3272727273),if(level<=20,round(-0.2333333333*level+13.0666666667),8)),20))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35098142,
+      "parentId" : 35098139,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-ghoul",
+      "value" : 19,
+      "rank" : 2,
+      "message" : "Turn Ghoul/3 HD Undead: {turned_roll = 1d20} >= {turn-ghoul} ? {turned_roll>=turn-ghoul}, HD Damaged: {if(turn-ghoul==0,sum(2d6),0)} for {if(turn-ghoul==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-ghoul>0 and turn-ghoul<99,sum(2d6),0)}, for {if(turn-ghoul<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000391335*(level^5)-0.0029176329*(level^4)+0.0775512066*(level^3)-0.8164146258*(level^2)+1.4800916969*level+18.0423172054),0),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35132416,
+      "parentId" : 34833393,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Wight/4 HD",
+          "Wraith/5 HD",
+          "Mummy/6 HD"
+        ]
+      },
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35132417,
+      "parentId" : 35132416,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-wight",
+      "value" : 21,
+      "rank" : 0,
+      "message" : "Turn Wight/4 HD Undead: {turned_roll = 1d20} >= {turn-wight} ? {turned_roll>=turn-wight}, HD Damaged: {if(turn-wight==0,sum(2d6),0)} for {if(turn-wight==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-wight>0 and turn-wight<99,sum(2d6),0)}, for {if(turn-wight<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=19,round(-0.000082483*(level^5)+0.0036057262*(level^4)-0.0450074877*(level^3)+0.0988470509*(level^2)-0.7354556004*level+21.5079208482),0),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35132418,
+      "parentId" : 35132416,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-wraith",
+      "value" : 23,
+      "rank" : 0,
+      "message" : "Turn Wraith/5 HD Undead: {turned_roll = 1d20} >= {turn-wraith} ? {turned_roll>=turn-wraith}, HD Damaged: {if(turn-wraith==0,sum(2d6),0)} for {if(turn-wraith==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-wraith>0 and turn-wraith<99,sum(2d6),0)}, for {if(turn-wraith<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.0001141248*(level^5)+0.0061167283*(level^4)-0.1104687404*(level^3)+0.7613900735*(level^2)-2.9913633773*level+25.492621259),0),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35132419,
+      "parentId" : 35132416,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-mummy",
+      "value" : 25,
+      "rank" : 1,
+      "message" : "Turn Mummy/6 HD Undead: {turned_roll = 1d20} >= {turn-mummy} ? {turned_roll>=turn-mummy}, HD Damaged: {if(turn-mummy==0,sum(2d6),0)} for {if(turn-mummy==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-mummy>0 and turn-mummy<99,sum(2d6),0)}, for {if(turn-mummy<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.0000140216*(level^5)+0.0015637938*(level^4)-0.0425230057*(level^3)+0.3835557418*(level^2)-2.22198224*level+27.0454076367),1),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828710,
+      "parentId" : 34701311,
+      "type" : "number",
+      "data" : null,
+      "name" : "Death Ray or Poison",
+      "value" : 11,
+      "rank" : 0,
+      "message" : "Death Ray or Poison Saving Throw: {1d20 >= death_ray_or_poison}",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,race_death_ray_or_poison +if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+11.9583591331),5),if(indexOf(\"Fighter\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000009718*(level^7)+0.0000692796*(level^6)-0.0019822859*(level^5)+0.0290491553*(level^4)-0.2298498615*(level^3)+0.942984472*(level^2)-2.0522592504*level+13.0568668058),5),if(indexOf(\"Magic-User\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000059227*(level^5)+0.0002599559*(level^4)-0.0038539385*(level^3)+0.0220395502*(level^2)-0.2906620982*level+13.3964912281),8),if(indexOf(\"Thief\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+12.1215946654),6),20))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35134167,
+      "parentId" : 34833393,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Spectre/7 HD",
+          "Vampire/8 HD",
+          "Ghost/9+ HD"
+        ]
+      },
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35134171,
+      "parentId" : 35134167,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-ghost",
+      "value" : 31,
+      "rank" : -1,
+      "message" : "Turn Ghost/9+ HD Undead: {turned_roll = 1d20} >= {turn-ghost} ? {turned_roll>=turn-ghost}, HD Damaged: {if(turn-ghost==0,sum(2d6),0)} for {if(turn-ghost==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-ghost>0 and turn-ghost<99,sum(2d6),0)}, for {if(turn-ghost<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.000031801*(level^5)-0.0017922444*(level^4)+0.0335297636*(level^3)-0.2582568262*(level^2)-0.2200812235*level+31.3366873065),7),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35134170,
+      "parentId" : 35134167,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-vampire",
+      "value" : 29,
+      "rank" : -2,
+      "message" : "Turn Vampire/8 HD Undead: {turned_roll = 1d20} >= {turn-vampire} ? {turned_roll>=turn-vampire}, HD Damaged: {if(turn-vampire==0,sum(2d6),0)} for {if(turn-vampire==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-vampire>0 and turn-vampire<99,sum(2d6),0)}, for {if(turn-vampire<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000530803*(level^5)-0.0025779195*(level^4)+0.0414824174*(level^3)-0.2750430336*(level^2)-0.2799407645*level+29.4553147575),3),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35134169,
+      "parentId" : 35134167,
+      "type" : "number",
+      "data" : null,
+      "name" : "turn-spectre",
+      "value" : 27,
+      "rank" : -3,
+      "message" : "Turn Spectre/7 HD Undead: {turned_roll = 1d20} >= {turn-spectre} ? {turned_roll>=turn-spectre}, HD Damaged: {if(turn-spectre==0,sum(2d6),0)} for {if(turn-spectre==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-spectre>0 and turn-spectre<99,sum(2d6),0)}, for {if(turn-spectre<99,sum(2d4),0)} turns",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000456993*(level^5)-0.0017380291*(level^4)+0.0186242795*(level^3)-0.0603213451*(level^2)-0.9986860094*level+28.0953560372),1),99)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140166,
+      "parentId" : 34833146,
+      "type" : "title-section",
+      "data" : {
+        "collapsed" : false
+      },
+      "value" : "Spells",
+      "rank" : 7,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140175,
+      "parentId" : 35140166,
+      "type" : "table",
+      "data" : {
+        "headers" : [
+          "Lv1",
+          "Lv2",
+          "Lv3",
+          "Lv4",
+          "Lv5",
+          "Lv6"
+        ]
+      },
+      "rank" : 0,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140183,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_two",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.000001939*(level^7)+0.0001449275*(level^6)-0.0043615112*(level^5)+0.067561807*(level^4)-0.5702053863*(level^3)+2.5326505768*(level^2)-4.7910180912*level+2.8142414733),5),if(indexOf(\"Magic-User\",class)==0,if(level <=18,round(0.0000005086*(level ^8)-0.0000438053*(level ^7)+0.0015580132*(level ^6)-0.029541088*(level ^5)+0.3214141402*(level ^4)-2.008317474*(level ^3)+6.7866359313*(level ^2)-10.2960965523* level +5.2195041834),5),0),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140184,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_threes",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=19,round(-0.0000002592*(level^8)+0.0000235728*(level^7)-0.0008788366*(level^6)+0.0173140394*(level^5)-0.1934778397*(level^4)+1.21940096*(level^3)-4.0263783558*(level^2)+6.115280592*level+(-3.1565012553)),5),if(indexOf(\"Magic-User\",class)==0,if(level <=20,round(-0.000000479843*(level ^8)+0.000039433487*(level ^7)-0.001324988139*(level ^6)+0.023414489018*(level ^5)-0.232854895236*(level ^4)+1.289984637974*(level ^3)-3.674109258163*(level ^2)+4.786674140531* level+(-2.174535284637)),5),0),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140185,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_four",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level <=17,round(0.0000016459*(level ^8)-0.0001189702*(level ^7)+0.0035404141*(level ^6)-0.0558962822*(level ^5)+0.5027714081*(level ^4)-2.5753866772*(level ^3)+7.1507064892*(level ^2)-9.5645197437* level +4.5588236451),4),if(indexOf(\"Magic-User\",class)==0,if(level <=16,round(0.0000026958*(level ^8)-0.0001791764*(level ^7)+0.0048833823*(level ^6)-0.070273593*(level ^5)+0.5729571807*(level ^4)-2.6462625846*(level ^3)+6.618461654*(level ^2)-8.0394694982* level +3.5576925684),4),0),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140186,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_five",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level <=19,round(0.0000002425*(level ^8)-0.0000211921*(level ^7)+0.0007646924*(level ^6)-0.0146627001*(level ^5)+0.1599630186*(level ^4)-0.9867866811*(level ^3)+3.2500376981*(level ^2)-5.0240782288* level +2.6561640593),3),if( indexOf(\"Magic-User\",class)==0,if(level <=20,round(0.0000003345*(level ^8)-0.0000275954*(level ^7)+0.000936218*(level ^6)-0.0167968146*(level ^5)+0.1704599785*(level ^4)-0.9720643949*(level ^3)+2.9507255988*(level ^2)-4.2233290135* level +2.1035631952),4),0),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140187,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_sixes",
+      "value" : 0,
+      "rank" : 0,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=17,round(0.0000000795*(level^8)-0.0000003125*(level^7)-0.0001524899*(level^6)+0.004870272*(level^5)-0.0643724815*(level^4)+0.4263394617*(level^3)-1.4279169019*(level^2)+2.1939958748*level+(-1.1470588314)),3),if(indexOf(\"Magic-User\",class)==0,if(level<=16,round(-0.000000674*(level^8)+0.0000529734*(level^7)-0.0016806381*(level^6)+0.0277862154*(level^5)-0.258021623*(level^4)+1.3552383743*(level^3)-3.8509537552*(level^2)+5.2641847392*level+(-2.5528847221)),3),0),0)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140883,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 1",
+      "value" : 0,
+      "rank" : 1,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140884,
+      "parentId" : 35140883,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_1-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_one",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176116,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : null,
+      "name" : "Hit Dice",
+      "value" : 1,
+      "rank" : 103,
+      "formula" : "if(level<=9,level,9)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176117,
+      "parentId" : 34701295,
+      "type" : "text",
+      "data" : null,
+      "name" : "Hit Dice Type",
+      "value" : "d 6",
+      "rank" : 101,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,\"d 6\",if(indexOf(\"Fighter\",class)==0,\"d 8\",\"d 4\"))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176119,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : null,
+      "name" : "Hit Dice Next Level",
+      "value" : 2,
+      "rank" : 106,
+      "formula" : "if(level+1<=9,level+1,9)",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176120,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : null,
+      "name" : "Hit Dice Bonus Next Level",
+      "value" : 0,
+      "rank" : 107,
+      "formula" : "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0,if(level+1<=20,max(0,level+1+(-9)),11),if(level+1<=20,max(0,2*(level+1)+(-18)),22))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176118,
+      "parentId" : 34701295,
+      "type" : "number",
+      "data" : null,
+      "name" : "Hit Dice Bonus",
+      "value" : 0,
+      "rank" : 105,
+      "formula" : "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0,if(level<=20,max(0,level+(-9)),11),if(level<=20,max(0,2*level+(-18)),22))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 34828712,
+      "parentId" : 34701311,
+      "type" : "number",
+      "data" : null,
+      "name" : "Paralysis or Turn to Stone",
+      "value" : 14,
+      "rank" : 2,
+      "message" : "Paralysis or Turn to Stone Saving Throw: {1d20 >= paralysis_or_turn_to_stone}",
+      "formula" : "if(indexOf(\"Cleric\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000049506*(level^6)-0.0003178086*(level^5)+0.0078912969*(level^4)-0.0951341589*(level^3)+0.5702836128*(level^2)-1.7858108966*level+15.1999999999),9)if(indexOf(\"Fighter\",class)==0,race_paralysis_or_turn_to_stone+if(level<=18,round(0.0000002098*(level^8)-0.0000163739*(level^7)+0.00052028*(level^6)-0.0086445844*(level^5)+0.0801484297*(level^4)-0.4087726145*(level^3)+1.0531792976*(level^2)-1.4786400703*level+14.941551316),8),if(indexOf(\"Magic-User\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+12.3690402477),5),if(indexOf(\"Thief\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+13.3118679051),8),20))))",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35176276,
+      "parentId" : 34701279,
+      "type" : "text",
+      "data" : null,
+      "name" : "BFRPG Character Template by Brucifer - version",
+      "value" : "1.2",
+      "rank" : -5,
+      "formula" : "1.2",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35141899,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 2",
+      "value" : 0,
+      "rank" : 2,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35141900,
+      "parentId" : 35141899,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_2-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_two",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35164510,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 3",
+      "value" : 0,
+      "rank" : 3,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35164511,
+      "parentId" : 35164510,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_3-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_threes",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35165581,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 4",
+      "value" : 0,
+      "rank" : 4,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35165582,
+      "parentId" : 35165581,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_4-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_four",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35167115,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 5",
+      "value" : 0,
+      "rank" : 5,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35167116,
+      "parentId" : 35167115,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_5-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_five",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35168820,
+      "parentId" : 35140175,
+      "type" : "checkboxes",
+      "data" : null,
+      "name" : "Slots Lv 6",
+      "value" : 0,
+      "rank" : 6,
+      "characterId" : 663964
+    },
+    {
+      "id" : 35168821,
+      "parentId" : 35168820,
+      "type" : "number",
+      "data" : null,
+      "name" : "slots_lv_6-max",
+      "value" : 0,
+      "rank" : 1,
+      "formula" : "spell_sixes",
+      "characterId" : 663964
+    },
+    {
+      "id" : 35140182,
+      "parentId" : 35140175,
+      "type" : "number",
+      "data" : null,
+      "name" : "spell_one",
+      "value" : 0,
+      "rank" : -1,
+      "formula" : "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000245771*(level^5)-0.0013700302*(level^4)+0.0291420753*(level^3)-0.2919572458*(level^2)+1.5797248539*level+(-1.2016511868)),6),if(indexOf(\"Magic-User\",class)==0,if(level<=20,round(-0.0000092318*(level^5)+0.0004385914*(level^4)-0.0067468041*(level^3)+0.0340845101*(level^2)+0.2422595296*level+0.9870485036),6),0),0)",
+      "characterId" : 663964
+    }
+  ],
+  "private" : false,
+  "type" : "tableplop-character-v2"
+}
