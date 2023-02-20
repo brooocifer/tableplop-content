@@ -49,7 +49,7 @@
       "name": "dexterity",
       "value": 0,
       "rank": 8,
-      "message": "dexterity check: {1d20 + dexterity}",
+      "message": "dexterity check: {turned_roll=1d20} + {dexterity} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + dexterity >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(dexterity-score<19,max(-3,round((-7.483032) + (2.396571*dexterity-score) - (0.3875923*(dexterity-score^2)) + (0.03564341*(dexterity-score^3)) - (0.001667064*(dexterity-score^4)) + (0.00003175359*(dexterity-score^5)))),3)",
       "characterId": 663964
     },
@@ -81,7 +81,7 @@
       "name": "intelligence",
       "value": 0,
       "rank": 4,
-      "message": "intelligence check: {1d20 + intelligence}",
+      "message": "intelligence check: {turned_roll=1d20} + {intelligence} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + intelligence >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
       "characterId": 663964
     },
@@ -103,7 +103,7 @@
       "name": "wisdom",
       "value": 0,
       "rank": 6,
-      "message": "wisdom check: {1d20 + wisdom}",
+      "message": "wisdom check: {turned_roll=1d20} + {wisdom} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + wisdom >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(wisdom-score<19,max(-3,round((-7.483032) + (2.396571*wisdom-score) - (0.3875923*(wisdom-score^2)) + (0.03564341*(wisdom-score^3)) - (0.001667064*(wisdom-score^4)) + (0.00003175359*(wisdom-score^5)))),3)",
       "characterId": 663964
     },
@@ -125,7 +125,7 @@
       "name": "charisma",
       "value": 0,
       "rank": 12,
-      "message": "charisma check: {1d20 + charisma}",
+      "message": "charisma check: {turned_roll=1d20} + {charisma} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + charisma >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(charisma-score<19,max(-3,round((-7.483032) + (2.396571*charisma-score) - (0.3875923*(charisma-score^2)) + (0.03564341*(charisma-score^3)) - (0.001667064*(charisma-score^4)) + (0.00003175359*(charisma-score^5)))),3)",
       "characterId": 663964
     },
@@ -147,7 +147,7 @@
       "name": "strength",
       "value": 0,
       "rank": -2,
-      "message": "strength check: {1d20 + strength}",
+      "message": "strength check: {turned_roll=1d20} + {strength} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + strength >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(strength-score<19,max(-3,round((-7.483032) + (2.396571*strength-score) - (0.3875923*(strength-score^2)) + (0.03564341*(strength-score^3)) - (0.001667064*(strength-score^4)) + (0.00003175359*(strength-score^5)))),3)",
       "characterId": 663964
     },
@@ -396,7 +396,7 @@
       "name": "constitution",
       "value": 0,
       "rank": 10,
-      "message": "constitution check: {1d20 + constitution}",
+      "message": "constitution check: {turned_roll=1d20} + {constitution} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + constitution >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(constitution-score<19,max(-3,round((-7.483032) + (2.396571*constitution-score) - (0.3875923*(constitution-score^2)) + (0.03564341*(constitution-score^3)) - (0.001667064*(constitution-score^4)) + (0.00003175359*(constitution-score^5)))),3)",
       "characterId": 663964
     },
@@ -1234,7 +1234,7 @@
       "type": "number",
       "data": null,
       "name": "Turned Roll",
-      "value": 19,
+      "value": 20,
       "rank": 5,
       "characterId": 663964
     },
@@ -1505,7 +1505,7 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Character Template by Brucifer - version",
-      "value": "1.2",
+      "value": "1.3",
       "rank": -5,
       "formula": "1.2",
       "characterId": 663964
