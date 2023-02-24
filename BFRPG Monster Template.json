@@ -97,7 +97,7 @@
       "parentId": 35350374,
       "type": "title-section",
       "data": {
-        "collapsed": true
+        "collapsed": false
       },
       "private": true,
       "value": "Hidden",
@@ -378,7 +378,6 @@
       "name": "spell_two",
       "value": 0,
       "rank": 0,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -420,7 +419,6 @@
       "name": "Hit Dice Bonus",
       "value": 0,
       "rank": 106,
-      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0,if(level<=20,max(0,level+(-9)),11),if(level<=20,max(0,2*level+(-18)),22))",
       "characterId": 673402
     },
     {
@@ -429,9 +427,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Monster Template by Brucifer - version",
-      "value": "1.1",
+      "value": "1.2",
       "rank": -4,
-      "formula": "1.1",
+      "formula": "1.2",
       "characterId": 673402
     },
     {
@@ -547,7 +545,6 @@
       "name": "spell_one",
       "value": 0,
       "rank": -3,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -558,7 +555,6 @@
       "name": "spell_fours",
       "value": 0,
       "rank": 2,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -678,7 +674,6 @@
       "name": "spell_threes",
       "value": 0,
       "rank": 0,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -689,7 +684,6 @@
       "name": "spell_fives",
       "value": 0,
       "rank": 3,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -700,7 +694,6 @@
       "name": "spell_sixes",
       "value": 0,
       "rank": 4,
-      "formula": null,
       "characterId": 673402
     },
     {
@@ -800,7 +793,7 @@
       "type": "text",
       "data": null,
       "name": "Movement",
-      "rank": 115,
+      "rank": 116,
       "characterId": 673402
     },
     {
@@ -851,6 +844,15 @@
       "name": "Tertiary Name",
       "value": "",
       "rank": 4,
+      "characterId": 673402
+    },
+    {
+      "id": 35506173,
+      "parentId": 35350386,
+      "type": "number",
+      "data": null,
+      "name": "Special XP Value",
+      "rank": 115,
       "characterId": 673402
     }
   ],
