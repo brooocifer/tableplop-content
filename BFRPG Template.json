@@ -17,7 +17,7 @@
       "name": "Primary Melee Weapon",
       "icon": "/images/message.png",
       "value": "",
-      "rank": -11,
+      "rank": -12,
       "message": "Primary Melee Weapon {primary_name} To Hit: {1d20 + primary_bonus+strength+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus+strength}",
       "characterId": 663964
     },
@@ -71,18 +71,6 @@
       "name": "constitution-score",
       "value": 10,
       "rank": -11,
-      "characterId": 663964
-    },
-    {
-      "id": 34701287,
-      "parentId": 34796008,
-      "type": "ability",
-      "data": {},
-      "name": "intelligence",
-      "value": 0,
-      "rank": 4,
-      "message": "intelligence check: {turned_roll=1d20} + {intelligence} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + intelligence >= if(level<=20,round(-0.5*level+17.2381),7)}",
-      "formula": "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
       "characterId": 663964
     },
     {
@@ -228,7 +216,7 @@
       "parentId": 34701304,
       "type": "number",
       "data": {},
-      "name": "hit_points-maximum",
+      "name": "hit-points-maximum",
       "value": 10,
       "rank": 102,
       "characterId": 663964
@@ -238,7 +226,7 @@
       "parentId": 34701304,
       "type": "number",
       "data": {},
-      "name": "hit_points-temporary",
+      "name": "hit-points-temporary",
       "value": 0,
       "rank": 104,
       "characterId": 663964
@@ -294,7 +282,7 @@
       "name": "Primary Bow Weapon",
       "icon": "/images/message.png",
       "value": "",
-      "rank": -10,
+      "rank": -11,
       "message": "Primary Bow Weapon {primary_name} To Hit: {1d20 + primary_bonus+dexterity+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus}",
       "characterId": 663964
     },
@@ -306,7 +294,7 @@
       "name": "Primary Thrown Weapon",
       "icon": "/images/message.png",
       "value": "",
-      "rank": -9,
+      "rank": -10,
       "message": "Primary Thrown Weapon {primary_name} To Hit: {1d20 + primary_bonus+dexterity+attack_bonus}, Damage: {1d@:primary_damage:+primary_bonus+strength}",
       "characterId": 663964
     },
@@ -351,7 +339,7 @@
       "parentId": 34701295,
       "type": "health",
       "data": {},
-      "name": "Hit Points",
+      "name": "hit-points",
       "value": 10,
       "rank": 108,
       "characterId": 663964
@@ -379,12 +367,12 @@
     },
     {
       "id": 34701303,
-      "parentId": 34701295,
+      "parentId": 34701267,
       "type": "number",
       "data": {},
       "name": "Initiative",
       "value": 0,
-      "rank": 91,
+      "rank": -20,
       "message": "!r initiative = 1d6",
       "characterId": 663964
     },
@@ -1234,7 +1222,7 @@
       "type": "number",
       "data": null,
       "name": "Turned Roll",
-      "value": 20,
+      "value": 19,
       "rank": 5,
       "characterId": 663964
     },
@@ -1505,9 +1493,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Character Template by Brucifer - version",
-      "value": "1.3",
+      "value": "1.31",
       "rank": -5,
-      "formula": "1.2",
+      "formula": "1.31",
       "characterId": 663964
     },
     {
@@ -1722,6 +1710,18 @@
       "data": null,
       "value": "<p>&nbsp;</p>",
       "rank": 2,
+      "characterId": 663964
+    },
+    {
+      "id": 34701287,
+      "parentId": 34796008,
+      "type": "ability",
+      "data": {},
+      "name": "intelligence",
+      "value": 0,
+      "rank": 4,
+      "message": "intelligence check: {turned_roll=1d20} + {intelligence} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + intelligence >= if(level<=20,round(-0.5*level+17.2381),7)}",
+      "formula": "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
       "characterId": 663964
     }
   ],
