@@ -66,7 +66,7 @@
       "parentId": 35350403,
       "type": "number",
       "data": {},
-      "name": "hit_points-maximum",
+      "name": "hit-points-maximum",
       "value": 10,
       "rank": 102,
       "characterId": 673402
@@ -76,7 +76,7 @@
       "parentId": 35350403,
       "type": "number",
       "data": {},
-      "name": "hit_points-temporary",
+      "name": "hit-points-temporary",
       "value": 0,
       "rank": 104,
       "characterId": 673402
@@ -121,7 +121,7 @@
       "parentId": 35350386,
       "type": "health",
       "data": {},
-      "name": "Hit Points",
+      "name": "hit-points",
       "value": 10,
       "rank": 111,
       "characterId": 673402
@@ -139,12 +139,12 @@
     },
     {
       "id": 35350406,
-      "parentId": 35350386,
+      "parentId": 35350372,
       "type": "number",
       "data": {},
       "name": "Initiative",
       "value": 0,
-      "rank": 88,
+      "rank": -20,
       "message": "!r initiative = 1d6",
       "characterId": 673402
     },
@@ -427,9 +427,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Monster Template by Brucifer - version",
-      "value": "1.2",
+      "value": "1.21",
       "rank": -4,
-      "formula": "1.2",
+      "formula": "1.21",
       "characterId": 673402
     },
     {
@@ -856,6 +856,6 @@
       "characterId": 673402
     }
   ],
-  "private": false,
+  "private": true,
   "type": "tableplop-character-v2"
 }
