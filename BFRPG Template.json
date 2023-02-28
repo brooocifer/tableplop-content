@@ -114,7 +114,7 @@
       "value": 0,
       "rank": 12,
       "message": "charisma check: {turned_roll=1d20} + {charisma} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + charisma >= if(level<=20,round(-0.5*level+17.2381),7)}",
-      "formula": "if(charisma-score<19,max(-3,round((-7.483032) + (2.396571*charisma-score) - (0.3875923*(charisma-score^2)) + (0.03564341*(charisma-score^3)) - (0.001667064*(charisma-score^4)) + (0.00003175359*(charisma-score^5)))),3)",
+      "formula": "if(charisma-score<19,max(-3,round((-7.483032) + (2.396571*charisma-score) - (0.3875923*(charisma-score^2)) + (0.03564341*(charisma-score^3)) - (0.001667064*(charisma-score^4)) + (0.00003175359*(charisma-score^5)))),3)+if(indexOf(\"Half-Orc\",race)==0,1,0)",
       "characterId": 663964
     },
     {
@@ -125,18 +125,6 @@
       "name": "charisma-score",
       "value": 10,
       "rank": 0,
-      "characterId": 663964
-    },
-    {
-      "id": 34701293,
-      "parentId": 34796008,
-      "type": "ability",
-      "data": {},
-      "name": "strength",
-      "value": 0,
-      "rank": -2,
-      "message": "strength check: {turned_roll=1d20} + {strength} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + strength >= if(level<=20,round(-0.5*level+17.2381),7)}",
-      "formula": "if(strength-score<19,max(-3,round((-7.483032) + (2.396571*strength-score) - (0.3875923*(strength-score^2)) + (0.03564341*(strength-score^3)) - (0.001667064*(strength-score^4)) + (0.00003175359*(strength-score^5)))),3)",
       "characterId": 663964
     },
     {
@@ -208,7 +196,7 @@
       "name": "Attack Bonus",
       "value": 1,
       "rank": 90,
-      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Thief\",class)>=0,if(level<=20,round(-0.0000248351*(level^5)+0.0013366027*(level^4)-0.025988336*(level^3)+0.2114431262*(level^2)-0.1982556036*level+0.9629514964),8),if(indexOf(\"Fighter\",class)==0,if(level<=20,round(-0.0000151304*(level^5)+0.0007378592*(level^4)-0.0120340447*(level^3)+0.0589040704*(level^2)+0.6512518791*level+0.1555227381),10),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if(level<=20,round(-0.0000294342*(level^5)+0.0016168058*(level^4)-0.0317729965*(level^3)+0.264696883*(level^2)-0.5202533336*level+1.218627451),7),0)))",
+      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Thief\",class)>=0,if(level<=20,round(-0.0000248351*(level^5)+0.0013366027*(level^4)-0.025988336*(level^3)+0.2114431262*(level^2)-0.1982556036*level+0.9629514964),8),if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,if(level<=20,round(-0.0000151304*(level^5)+0.0007378592*(level^4)-0.0120340447*(level^3)+0.0589040704*(level^2)+0.6512518791*level+0.1555227381),10),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if(level<=20,round(-0.0000294342*(level^5)+0.0016168058*(level^4)-0.0317729965*(level^3)+0.264696883*(level^2)-0.5202533336*level+1.218627451),7),0)))",
       "characterId": 663964
     },
     {
@@ -249,8 +237,8 @@
       "data": {},
       "name": "Dark Vision (feet)",
       "value": 0,
-      "rank": -4,
-      "formula": "if(indexOf(\"Dwarf\",Race)>-1,60,if(indexOf(\"Elf\",Race)>-1,60,0))",
+      "rank": -5,
+      "formula": "if(indexOf(\"Dwarf\",race)==0 or indexOf(\"Elf\",race)==0 or indexOf(\"Half-Orc\",race)==0,60,if(indexOf(\"Half-Elf\",race)==0 or indexOf(\"Half-Ogre\",race)==0,30,0))",
       "characterId": 663964
     },
     {
@@ -464,7 +452,7 @@
       "value": 15,
       "rank": 3,
       "message": "Dragon Breath Saving Throw: {1d20 >= dragon_breath}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_dragon_breath+(-race_paralysis_or_turn_to_stone)+paralysis_or_turn_to_stone+2,if(indexOf(\"Fighter\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000002026*(level^8)+0.0000152076*(level^7)-0.000456995*(level^6)+0.0069861521*(level^5)-0.0566859839*(level^4)+0.2266792207*(level^3)-0.3211940758*(level^2)-0.4657900132*level+15.917346511),9),if(indexOf(\"Thief\",class)>=0,race_dragon_breath+if(level<=20,round(-0.0000118455*(level^5)+0.0006218872*(level^4)-0.0119908467*(level^3)+0.1034594158*(level^2)-0.8839160048*level+16.7083591331),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+16.3118679051),11),20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_dragon_breath+(-race_paralysis_or_turn_to_stone)+paralysis_or_turn_to_stone+2,if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000002026*(level^8)+0.0000152076*(level^7)-0.000456995*(level^6)+0.0069861521*(level^5)-0.0566859839*(level^4)+0.2266792207*(level^3)-0.3211940758*(level^2)-0.4657900132*level+15.917346511),9),if(indexOf(\"Thief\",class)>=0,race_dragon_breath+if(level<=20,round(-0.0000118455*(level^5)+0.0006218872*(level^4)-0.0119908467*(level^3)+0.1034594158*(level^2)-0.8839160048*level+16.7083591331),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+16.3118679051),11),20))))",
       "characterId": 663964
     },
     {
@@ -476,7 +464,7 @@
       "value": 17,
       "rank": 4,
       "message": "Rod Staff or Spell Saving Throw: {1d20 >= rod_staff_or_spell}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_rod_staff_or_spell+(-race_dragon_breath)+dragon_breath+(-1),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+14.1215946654),8),if(indexOf(\"Fighter\",class)==0,race_rod_staff_or_spell+(-race_magic_wands)+magic_wand+4,if(indexOf(\"Thief\",class)==0,race_rod_staff_or_spell+(-race_death_ray_or_poison)+death_ray_or_poison+2,20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_rod_staff_or_spell+(-race_dragon_breath)+dragon_breath+(-1),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+14.1215946654),8),if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,race_rod_staff_or_spell+(-race_magic_wands)+magic_wand+4,if(indexOf(\"Thief\",class)==0,race_rod_staff_or_spell+(-race_death_ray_or_poison)+death_ray_or_poison+2,20))))",
       "characterId": 663964
     },
     {
@@ -486,7 +474,7 @@
       "data": null,
       "name": "Find Secret Doors",
       "value": 1,
-      "rank": -3,
+      "rank": -4,
       "message": "Roll for Finding Secret Doors: {1d6 <= find_secret_doors}",
       "formula": "if(indexOf(\"Elf\",Race)>-1,2,1)",
       "characterId": 663964
@@ -918,7 +906,7 @@
         "collapsed": false
       },
       "value": "Thieves Abilities",
-      "rank": 5,
+      "rank": 6,
       "characterId": 663964
     },
     {
@@ -929,7 +917,7 @@
         "collapsed": false
       },
       "value": "Turn Undead",
-      "rank": 6,
+      "rank": 7,
       "characterId": 663964
     },
     {
@@ -948,20 +936,9 @@
       "data": null,
       "name": "Dwarf Detection",
       "value": 0,
-      "rank": -2,
+      "rank": -3,
       "message": "Roll for Dwarf Detection: {1d6 <= dwarf_detection}",
       "formula": "if(indexOf(\"Dwarf\",Race)>-1,2,0)",
-      "characterId": 663964
-    },
-    {
-      "id": 34838327,
-      "parentId": 34833146,
-      "type": "text",
-      "data": null,
-      "name": "Racial Restrictions",
-      "value": "None",
-      "rank": -1,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Constitution 9; Maximum Charisma 17; May not employ weapons longer than 4 feet\",if(indexOf(\"Elf\",Race)==0,\"Minimum Intelligence 9; Maximum Constitution 17; Never roll larger than a 6-sided die for hit points.\",if(indexOf(\"Halfling\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Dexterity 9; Maximum Strength 17; Never roll larger than a 6-sided die for hit points; May not use Large weapons; Must wield Medium weapons with both hands\",if(indexOf(\"Chelonian\",race)==0,\"Must have a minimum Constitution\nscore of 11, and is limited to a maximum Dexterity score\nof 17. Requires specially-constructed armors\",if(indexOf(\"Human\",Race)==0,\"None\",\"see Rules\")))))",
       "characterId": 663964
     },
     {
@@ -972,7 +949,7 @@
       "name": "Race Death Ray or Poison",
       "value": 0,
       "rank": 0,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Chelonian\",race)==0,-2,0)))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Chelonian\",race)==0,-2,if(indexOf(\"Half-Orc\",race)==0,-1,0))))",
       "characterId": 663964
     },
     {
@@ -983,7 +960,7 @@
       "name": "Race Magic Wands",
       "value": 0,
       "rank": 1,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,0)))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,if(indexOf(\"Half-Elf\",race)==0,-1,0))))",
       "characterId": 663964
     },
     {
@@ -1016,7 +993,7 @@
       "name": "Race Rod Staff or Spell",
       "value": 0,
       "rank": 4,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,0)))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Elf\",Race)==0,-2,if(indexOf(\"Half-Elf\",race)==0,-1,0))))",
       "characterId": 663964
     },
     {
@@ -1151,7 +1128,7 @@
       "value": 0,
       "rank": 0,
       "message": "Move Silently: {1d100 + dm_task_modifier <= move-silently}",
-      "formula": "if(indexOf(\"Thief\",class)>=0,if(level<=20,round(0.000000030566*(level^8)+0.000000766149*(level^7)-0.000160187799*(level^6)+0.005758942848*(level^5)-0.093025818881*(level^4)+0.751404470113*(level^3)-2.990252167434*(level^2)+10.266386884859*level+16.981779377271),93),0)",
+      "formula": "if(indexOf(\"Thief\",class)>=0 or indexOf(\"Ranger\",class)==0,if(level<=20,round(0.000000030566*(level^8)+0.000000766149*(level^7)-0.000160187799*(level^6)+0.005758942848*(level^5)-0.093025818881*(level^4)+0.751404470113*(level^3)-2.990252167434*(level^2)+10.266386884859*level+16.981779377271),93),0)",
       "characterId": 663964
     },
     {
@@ -1164,18 +1141,6 @@
       "rank": 1,
       "message": "Climb Walls: {1d100 + dm_task_modifier <= climb-walls}",
       "formula": "if(indexOf(\"Thief\",class)>=0,level+79,0)",
-      "characterId": 663964
-    },
-    {
-      "id": 34900887,
-      "parentId": 34900728,
-      "type": "number",
-      "data": null,
-      "name": "hide-in-shadows",
-      "value": 0,
-      "rank": 2,
-      "message": "Hide: {1d100 + dm_task_modifier <= hide-in-shadows}",
-      "formula": "if(indexOf(\"Thief\",class)>=0,open-locks+(-15),0)",
       "characterId": 663964
     },
     {
@@ -1247,7 +1212,7 @@
       "value": 13,
       "rank": 1,
       "message": "Magic Wands Saving Throw: {1d20 >= magic_wands}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_magic_wands+if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+12.9583591331),6),if(indexOf(\"Fighter\",class)==0,race_magic_wands+if(level<=19,round(-0.0000002989*(level^8)+0.0000232422*(level^7)-0.0007310049*(level^6)+0.0118833669*(level^5)-0.1053258172*(level^4)+0.4855565021*(level^3)-0.933699521*(level^2)-0.3398406655*level+13.9684975507),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_magic_wands+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+13.3690402477),6),if(indexOf(\"Thief\",class)==0,race_magic_wands+if(level<=11,round(-0.2363636364*level+14.3272727273),if(level<=20,round(-0.2333333333*level+13.0666666667),8)),20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_magic_wands+if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+12.9583591331),6),if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,race_magic_wands+if(level<=19,round(-0.0000002989*(level^8)+0.0000232422*(level^7)-0.0007310049*(level^6)+0.0118833669*(level^5)-0.1053258172*(level^4)+0.4855565021*(level^3)-0.933699521*(level^2)-0.3398406655*level+13.9684975507),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_magic_wands+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+13.3690402477),6),if(indexOf(\"Thief\",class)==0,race_magic_wands+if(level<=11,round(-0.2363636364*level+14.3272727273),if(level<=20,round(-0.2333333333*level+13.0666666667),8)),20))))",
       "characterId": 663964
     },
     {
@@ -1462,7 +1427,7 @@
       "name": "Hit Dice Type",
       "value": "d 8",
       "rank": 101,
-      "formula": "if(indexOf(\"Cleric\",class)==0,\"d 6\",if(indexOf(\"Elf\",race)==0 and indexOf(\"Fighter\",class)==0,\"d 6\",if(indexOf(\"Halfling\",race)==0 and indexOf(\"Fighter\",class)==0,\"d 6\",if(indexOf(\"Fighter\",class)==0,\"d 8\",\"d 4\"))))",
+      "formula": "if(indexOf(\"Half-Ogre\",race)==0 and indexOf(\"Cleric\",class)==0,\"d 8\",if(indexOf(\"Cleric\",class)==0,\"d 6\",if(indexOf(\"Elf\",race)==0 and (indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0),\"d 6\",if(indexOf(\"Halfling\",race)==0 and (indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0),\"d 6\",if(indexOf(\"Half-Ogre\",race)==0 and indexOf(\"Fighter\",class)==0,\"d 10\",if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,\"d 8\",\"d 4\"))))))",
       "characterId": 663964
     },
     {
@@ -1493,9 +1458,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Character Template by Brucifer - version",
-      "value": "1.32",
+      "value": "1.33",
       "rank": -4,
-      "formula": "1.32",
+      "formula": "1.33",
       "characterId": 663964
     },
     {
@@ -1615,17 +1580,6 @@
       "characterId": 663964
     },
     {
-      "id": 34838329,
-      "parentId": 34833146,
-      "type": "text",
-      "data": null,
-      "name": "Racial Special Abilities",
-      "value": "Gain +10% bonus to XP",
-      "rank": 0,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Dwarf Detection: able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6, a search must be performed before this roll may be made.\",if(indexOf(\"Elf\",Race)==0,\"Has 1 in a 6-sided die chance to find secret doors with a cursory look; Immune to paralyzing attack of ghouls; Less likely to be surprised, reducing the chance by 1 in a 6-sided die chance\",if(indexOf(\"Halfling\",Race)==0,\"Gains +1 Attack Bonus with ranged weapons; +2 AC when attacked in melee by creatures larger than man-sized; +1 to Initiative; Hide Outdoors 90% Success; Hide Indoors 70% Success\",if(indexOf(\"Chelonian\",race)==0,\"Base AC 13 due to thick skin, base AC 17 for back shell, can hold breath twice as long as humans, and underwater vision two times better than humans\",if(indexOf(\"Human\",Race)==0,\"Gain +10% bonus to XP\",\"see Rules\")))))",
-      "characterId": 663964
-    },
-    {
       "id": 35134170,
       "parentId": 35134167,
       "type": "number",
@@ -1687,6 +1641,59 @@
       "rank": 4,
       "message": "intelligence check: {turned_roll=1d20} + {intelligence} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + intelligence >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
+      "characterId": 663964
+    },
+    {
+      "id": 34900887,
+      "parentId": 34900728,
+      "type": "number",
+      "data": null,
+      "name": "hide-in-shadows",
+      "value": 0,
+      "rank": 2,
+      "message": "Hide: {1d100 + dm_task_modifier <= hide-in-shadows}",
+      "formula": "if(indexOf(\"Thief\",class)>=0 or indexOf(\"Ranger\",class)==0,if(level<=20,round(-0.000000181995*(level^8)+0.000019863078*(level^7)-0.000861678596*(level^6)+0.019371721069*(level^5)-0.24373455286*(level^4)+1.708857734311*(level^3)-6.301954256766*(level^2)+15.696698222397*level+13.963505146834),88)-15,0)",
+      "characterId": 663964
+    },
+    {
+      "id": 35656089,
+      "parentId": 34833146,
+      "type": "number",
+      "data": null,
+      "name": "Tracking",
+      "value": 0,
+      "rank": 0,
+      "message": "Tracking: {1d100 + dm_task_modifier <= tracking}",
+      "formula": "if(indexOf(\"Ranger\",class)==0,if(level<=9,4*level+36,if(level<=15,3*level+45,if(level<=20,level+75,95))),0)",
+      "characterId": 663964
+    },
+    {
+      "id": 34828705,
+      "parentId": 34701295,
+      "type": "number",
+      "data": null,
+      "name": "XP Next Level",
+      "value": 2000,
+      "rank": 100,
+      "formula": "if(indexOf(\"Magic-User/Thief\",class)==0,if((level+1)<=7,round(31.25*((level+1)^5)-468.75*((level+1)^4)+3281.25*((level+1)^3)-10781.25*((level+1)^2)+19187.5*(level+1)-11250),225000*(level+1)+(-1575000)),if(indexOf(\"Fighter/Magic-User\",class)==0,if((level+1)<=7,round(37.5*((level+1)^5)-562.5*((level+1)^4)+3937.5*((level+1)^3)-12937.5*((level+1)^2)+23025*(level+1)-13500),270000*(level+1)+(-1890000)),if(indexOf(\"Cleric\",class)==0,if((level+1)<=7,round(12.5*((level+1)^5)-187.5*((level+1)^4)+1312.5*((level+1)^3)-4312.5*((level+1)^2)+7675*(level+1)-4500),90000*(level+1)-630000),if(indexOf(\"Fighter\",class)==0,if((level+1)<=7,round(16.6666666667*((level+1)^5)-250*((level+1)^4)+1750*((level+1)^3)-5750*((level+1)^2)+10233.3333333333*(level+1)-6000),120000*(level+1)-840000),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if((level+1)<=7,100*round(0.208333*((level+1)^5)-3.125*((level+1)^4)+21.875*((level+1)^3)-71.875*((level+1)^2)+127.916667*(level+1)-75),150000*(level+1)-1050000),if(indexOf(\"Thief\",class)==0,if((level+1)<=7,round(10.4166666667*((level+1)^5)-156.25*((level+1)^4)+1093.75*((level+1)^3)-3593.75*((level+1)^2)+6395.8333333333*(level+1)-3750),75000*(level+1)-525000)if(indexOf(\"Ranger\",class)==0,if((level+1)<=7,round(18.3333333333*((level+1)^5)-275*((level+1)^4)+1925*((level+1)^3)-6325*((level+1)^2)+11256.6666666666*(level+1)+(-6600)),132000*(level+1)+(-924000)),0)))))))",
+      "characterId": 663964
+    },
+    {
+      "id": 35656607,
+      "parentId": 34701267,
+      "type": "heading",
+      "data": null,
+      "value": "Combat Notes",
+      "rank": -18,
+      "characterId": 663964
+    },
+    {
+      "id": 35656633,
+      "parentId": 34701267,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>&nbsp;</p>",
+      "rank": -17,
       "characterId": 663964
     },
     {
@@ -1757,18 +1764,6 @@
       "characterId": 663964
     },
     {
-      "id": 34828710,
-      "parentId": 34701311,
-      "type": "number",
-      "data": null,
-      "name": "Death Ray or Poison",
-      "value": 12,
-      "rank": 0,
-      "message": "Death Ray or Poison Saving Throw: {1d20 >= death_ray_or_poison}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_death_ray_or_poison +if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+11.9583591331),5),if(indexOf(\"Fighter\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000009718*(level^7)+0.0000692796*(level^6)-0.0019822859*(level^5)+0.0290491553*(level^4)-0.2298498615*(level^3)+0.942984472*(level^2)-2.0522592504*level+13.0568668058),5),if(indexOf(\"Thief\",class)>=0,race_death_ray_or_poison+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+12.1215946654),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000059227*(level^5)+0.0002599559*(level^4)-0.0038539385*(level^3)+0.0220395502*(level^2)-0.2906620982*level+13.3964912281),8),20))))",
-      "characterId": 663964
-    },
-    {
       "id": 34828712,
       "parentId": 34701311,
       "type": "number",
@@ -1777,18 +1772,53 @@
       "value": 14,
       "rank": 2,
       "message": "Paralysis or Turn to Stone Saving Throw: {1d20 >= paralysis_or_turn_to_stone}",
-      "formula": "if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+12.3690402477),5),if(indexOf(\"Cleric\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000049506*(level^6)-0.0003178086*(level^5)+0.0078912969*(level^4)-0.0951341589*(level^3)+0.5702836128*(level^2)-1.7858108966*level+15.1999999999),9)if(indexOf(\"Fighter\",class)==0,race_paralysis_or_turn_to_stone+if(level<=18,round(0.0000002098*(level^8)-0.0000163739*(level^7)+0.00052028*(level^6)-0.0086445844*(level^5)+0.0801484297*(level^4)-0.4087726145*(level^3)+1.0531792976*(level^2)-1.4786400703*level+14.941551316),8),if(indexOf(\"Thief\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+13.3118679051),8),20))))",
+      "formula": "if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+12.3690402477),5),if(indexOf(\"Cleric\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000049506*(level^6)-0.0003178086*(level^5)+0.0078912969*(level^4)-0.0951341589*(level^3)+0.5702836128*(level^2)-1.7858108966*level+15.1999999999),9)if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,race_paralysis_or_turn_to_stone+if(level<=18,round(0.0000002098*(level^8)-0.0000163739*(level^7)+0.00052028*(level^6)-0.0086445844*(level^5)+0.0801484297*(level^4)-0.4087726145*(level^3)+1.0531792976*(level^2)-1.4786400703*level+14.941551316),8),if(indexOf(\"Thief\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+13.3118679051),8),20))))",
       "characterId": 663964
     },
     {
-      "id": 34828705,
-      "parentId": 34701295,
+      "id": 34838327,
+      "parentId": 34833146,
+      "type": "text",
+      "data": null,
+      "name": "Racial Restrictions",
+      "value": "None",
+      "rank": -2,
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Constitution 9; Maximum Charisma 17; May not employ weapons longer than 4 feet\",if(indexOf(\"Elf\",Race)==0,\"Minimum Intelligence 9; Maximum Constitution 17; Never roll larger than a 6-sided die for hit points.\",if(indexOf(\"Halfling\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Dexterity 9; Maximum Strength 17; Never roll larger than a 6-sided die for hit points; May not use Large weapons; Must wield Medium weapons with both hands\",if(indexOf(\"Chelonian\",race)==0,\"Must have a minimum Constitution\nscore of 11, and is limited to a maximum Dexterity score\nof 17. Requires specially-constructed armors\",if(indexOf(\"Half-Elf\",race)==0,\"Minimum Intelligence 9; Maximum Constitution 17\",if(indexOf(\"Half-Ogre\",race)==0,\"Cleric or Fighter classes only; Minimum Strength and Constitution 13; Maximum Intelligence and Wisdom 15\",if(indexOf(\"Half-Orc\",race)==0,\"Minimum Constitution 9,; Maximum Intelligence 17\",if(indexOf(\"Human\",race)==0,\"None\",\"see Rules\"))))))))",
+      "characterId": 663964
+    },
+    {
+      "id": 34701293,
+      "parentId": 34796008,
+      "type": "ability",
+      "data": {},
+      "name": "strength",
+      "value": 0,
+      "rank": -2,
+      "message": "strength check: {turned_roll=1d20} + {strength} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + strength >= if(level<=20,round(-0.5*level+17.2381),7)}",
+      "formula": "if(strength-score<19,max(-3,round((-7.483032) + (2.396571*strength-score) - (0.3875923*(strength-score^2)) + (0.03564341*(strength-score^3)) - (0.001667064*(strength-score^4)) + (0.00003175359*(strength-score^5)))),3)+if(indexOf(\"Half-Ogre\",race)==0,1,0)",
+      "characterId": 663964
+    },
+    {
+      "id": 34838329,
+      "parentId": 34833146,
+      "type": "text",
+      "data": null,
+      "name": "Racial Special Abilities",
+      "value": "Gain +10% bonus to XP",
+      "rank": -1,
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Dwarf Detection: able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6, a search must be performed before this roll may be made.\",if(indexOf(\"Elf\",Race)==0,\"Has 1 in a 6-sided die chance to find secret doors with a cursory look; Immune to paralyzing attack of ghouls; Less likely to be surprised, reducing the chance by 1 in a 6-sided die chance\",if(indexOf(\"Halfling\",Race)==0,\"Gains +1 Attack Bonus with ranged weapons; +2 AC when attacked in melee by creatures larger than man-sized; +1 to Initiative; Hide Outdoors 90% Success; Hide Indoors 70% Success\",if(indexOf(\"Chelonian\",race)==0,\"Base AC 13 due to thick skin, base AC 17 for back shell, can hold breath twice as long as humans, and underwater vision two times better than humans\",if(indexOf(\"Half-Elf\",race)==0,\"Gain +5% bonus to XP, except if a combination class\",if(indexOf(\"Half-Ogre\",race)==0,\"Gain +5% bonus to XP;+1 Strength Bonus\",if(indexOf(\"Half-Orc\",race)==0,\"Gain +5% bonus to XP;+1 Charisma Bonus\",if(indexOf(\"Human\",race)==0,\"Gain +10% bonus to XP\",\"see Rules\"))))))))",
+      "characterId": 663964
+    },
+    {
+      "id": 34828710,
+      "parentId": 34701311,
       "type": "number",
       "data": null,
-      "name": "XP Next Level",
-      "value": 2000,
-      "rank": 100,
-      "formula": "if(indexOf(\"Magic-User/Thief\",class)==0,if((level+1)<=7,round(31.25*((level+1)^5)-468.75*((level+1)^4)+3281.25*((level+1)^3)-10781.25*((level+1)^2)+19187.5*(level+1)-11250),225000*(level+1)+(-1575000)),if(indexOf(\"Fighter/Magic-User\",class)==0,if((level+1)<=7,round(37.5*((level+1)^5)-562.5*((level+1)^4)+3937.5*((level+1)^3)-12937.5*((level+1)^2)+23025*(level+1)-13500),270000*(level+1)+(-1890000)),if(indexOf(\"Cleric\",class)==0,if((level+1)<=7,round(12.5*((level+1)^5)-187.5*((level+1)^4)+1312.5*((level+1)^3)-4312.5*((level+1)^2)+7675*(level+1)-4500),90000*(level+1)-630000),if(indexOf(\"Fighter\",class)==0,if((level+1)<=7,round(16.6666666667*((level+1)^5)-250*((level+1)^4)+1750*((level+1)^3)-5750*((level+1)^2)+10233.3333333333*(level+1)-6000),120000*(level+1)-840000),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if((level+1)<=7,100*round(0.208333*((level+1)^5)-3.125*((level+1)^4)+21.875*((level+1)^3)-71.875*((level+1)^2)+127.916667*(level+1)-75),150000*(level+1)-1050000),if(indexOf(\"Thief\",class)==0,if((level+1)<=7,round(10.4166666667*((level+1)^5)-156.25*((level+1)^4)+1093.75*((level+1)^3)-3593.75*((level+1)^2)+6395.8333333333*(level+1)-3750),75000*(level+1)-525000),0))))))",
+      "name": "Death Ray or Poison",
+      "value": 12,
+      "rank": 0,
+      "message": "Death Ray or Poison Saving Throw: {1d20 >= death_ray_or_poison}",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_death_ray_or_poison +if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+11.9583591331),5),if(indexOf(\"Fighter\",class)==0 or indexOf(\"Ranger\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000009718*(level^7)+0.0000692796*(level^6)-0.0019822859*(level^5)+0.0290491553*(level^4)-0.2298498615*(level^3)+0.942984472*(level^2)-2.0522592504*level+13.0568668058),5),if(indexOf(\"Thief\",class)>=0,race_death_ray_or_poison+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+12.1215946654),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000059227*(level^5)+0.0002599559*(level^4)-0.0038539385*(level^3)+0.0220395502*(level^2)-0.2906620982*level+13.3964912281),8),20))))",
       "characterId": 663964
     }
   ],
