@@ -176,7 +176,7 @@
       "type": "text",
       "data": {},
       "name": "Class",
-      "value": "Cleric",
+      "value": "Fighter",
       "rank": 88,
       "characterId": 663964
     },
@@ -208,7 +208,7 @@
       "name": "Attack Bonus",
       "value": 1,
       "rank": 90,
-      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Thief\",class)>=0,if(level<=20,round(-0.0000248351*(level^5)+0.0013366027*(level^4)-0.025988336*(level^3)+0.2114431262*(level^2)-0.1982556036*level+0.9629514964),8),if(indexOf(\"Fighter\",class)==0,if(level<=20,round(-0.0000151304*(level^5)+0.0007378592*(level^4)-0.0120340447*(level^3)+0.0589040704*(level^2)+0.6512518791*level+0.1555227381),10),if(indexOf(\"Magic-User\",class)==0,if(level<=20,round(-0.0000294342*(level^5)+0.0016168058*(level^4)-0.0317729965*(level^3)+0.264696883*(level^2)-0.5202533336*level+1.218627451),7),0)))",
+      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Thief\",class)>=0,if(level<=20,round(-0.0000248351*(level^5)+0.0013366027*(level^4)-0.025988336*(level^3)+0.2114431262*(level^2)-0.1982556036*level+0.9629514964),8),if(indexOf(\"Fighter\",class)==0,if(level<=20,round(-0.0000151304*(level^5)+0.0007378592*(level^4)-0.0120340447*(level^3)+0.0589040704*(level^2)+0.6512518791*level+0.1555227381),10),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if(level<=20,round(-0.0000294342*(level^5)+0.0016168058*(level^4)-0.0317729965*(level^3)+0.264696883*(level^2)-0.5202533336*level+1.218627451),7),0)))",
       "characterId": 663964
     },
     {
@@ -262,7 +262,7 @@
       },
       "private": true,
       "value": "Hidden",
-      "rank": -6,
+      "rank": -5,
       "characterId": 663964
     },
     {
@@ -461,10 +461,10 @@
       "type": "number",
       "data": null,
       "name": "Dragon Breath",
-      "value": 16,
+      "value": 15,
       "rank": 3,
       "message": "Dragon Breath Saving Throw: {1d20 >= dragon_breath}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_dragon_breath+(-race_paralysis_or_turn_to_stone)+paralysis_or_turn_to_stone+2,if(indexOf(\"Fighter\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000002026*(level^8)+0.0000152076*(level^7)-0.000456995*(level^6)+0.0069861521*(level^5)-0.0566859839*(level^4)+0.2266792207*(level^3)-0.3211940758*(level^2)-0.4657900132*level+15.917346511),9),if(indexOf(\"Thief\",class)>=0,race_dragon_breath+if(level<=20,round(-0.0000118455*(level^5)+0.0006218872*(level^4)-0.0119908467*(level^3)+0.1034594158*(level^2)-0.8839160048*level+16.7083591331),6),if(indexOf(\"Magic-User\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+16.3118679051),11),20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_dragon_breath+(-race_paralysis_or_turn_to_stone)+paralysis_or_turn_to_stone+2,if(indexOf(\"Fighter\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000002026*(level^8)+0.0000152076*(level^7)-0.000456995*(level^6)+0.0069861521*(level^5)-0.0566859839*(level^4)+0.2266792207*(level^3)-0.3211940758*(level^2)-0.4657900132*level+15.917346511),9),if(indexOf(\"Thief\",class)>=0,race_dragon_breath+if(level<=20,round(-0.0000118455*(level^5)+0.0006218872*(level^4)-0.0119908467*(level^3)+0.1034594158*(level^2)-0.8839160048*level+16.7083591331),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+16.3118679051),11),20))))",
       "characterId": 663964
     },
     {
@@ -473,10 +473,10 @@
       "type": "number",
       "data": null,
       "name": "Rod Staff or Spell",
-      "value": 15,
+      "value": 17,
       "rank": 4,
       "message": "Rod Staff or Spell Saving Throw: {1d20 >= rod_staff_or_spell}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_rod_staff_or_spell+(-race_dragon_breath)+dragon_breath+(-1),if(indexOf(\"Magic-User\",class)>=0,race_dragon_breath+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+14.1215946654),8),if(indexOf(\"Fighter\",class)==0,race_rod_staff_or_spell+(-race_magic_wands)+magic_wand+4,if(indexOf(\"Thief\",class)==0,race_rod_staff_or_spell+(-race_death_ray_or_poison)+death_ray_or_poison+2,20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_rod_staff_or_spell+(-race_dragon_breath)+dragon_breath+(-1),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_dragon_breath+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+14.1215946654),8),if(indexOf(\"Fighter\",class)==0,race_rod_staff_or_spell+(-race_magic_wands)+magic_wand+4,if(indexOf(\"Thief\",class)==0,race_rod_staff_or_spell+(-race_death_ray_or_poison)+death_ray_or_poison+2,20))))",
       "characterId": 663964
     },
     {
@@ -510,7 +510,7 @@
         "collapsed": false
       },
       "value": "Treasure",
-      "rank": -10,
+      "rank": -9,
       "characterId": 663964
     },
     {
@@ -613,7 +613,7 @@
         "collapsed": false
       },
       "value": "Weapons",
-      "rank": -9,
+      "rank": -8,
       "characterId": 663964
     },
     {
@@ -753,7 +753,7 @@
         "collapsed": false
       },
       "value": "Armor",
-      "rank": -8,
+      "rank": -7,
       "characterId": 663964
     },
     {
@@ -863,7 +863,7 @@
         "collapsed": false
       },
       "value": "Equipment",
-      "rank": -7,
+      "rank": -6,
       "characterId": 663964
     },
     {
@@ -961,7 +961,7 @@
       "name": "Racial Restrictions",
       "value": "None",
       "rank": -1,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Class may not be Magic-User; Minimum Constitution 9; Maximum Charisma 17; May not employ weapons longer than 4 feet\",if(indexOf(\"Elf\",Race)==0,\"Minimum Intelligence 9; Maximum Constitution 17; Never roll larger than a 6-sided die for hit points.\",if(indexOf(\"Halfling\",Race)==0,\"Class may not be Magic-User; Minimum Dexterity 9; Maximum Strength 17; Never roll larger than a 6-sided die for hit points; May not use Large weapons; Must wield Medium weapons with both hands\",if(indexOf(\"Human\",Race)==0,\"None\",\"see Rules\"))))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Constitution 9; Maximum Charisma 17; May not employ weapons longer than 4 feet\",if(indexOf(\"Elf\",Race)==0,\"Minimum Intelligence 9; Maximum Constitution 17; Never roll larger than a 6-sided die for hit points.\",if(indexOf(\"Halfling\",Race)==0,\"Class may not be Magic-User or Necromancer; Minimum Dexterity 9; Maximum Strength 17; Never roll larger than a 6-sided die for hit points; May not use Large weapons; Must wield Medium weapons with both hands\",if(indexOf(\"Chelonian\",race)==0,\"Must have a minimum Constitution\nscore of 11, and is limited to a maximum Dexterity score\nof 17. Requires specially-constructed armors\",if(indexOf(\"Human\",Race)==0,\"None\",\"see Rules\")))))",
       "characterId": 663964
     },
     {
@@ -972,7 +972,7 @@
       "name": "Race Death Ray or Poison",
       "value": 0,
       "rank": 0,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,0))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,-4,if(indexOf(\"Halfling\",Race)==0,-4,if(indexOf(\"Chelonian\",race)==0,-2,0)))",
       "characterId": 663964
     },
     {
@@ -1210,7 +1210,7 @@
       "type": "number",
       "data": null,
       "name": "turn-zombie",
-      "value": 17,
+      "value": 99,
       "rank": 1,
       "message": "Turn Zombie/2 HD Undead: {turned_roll = 1d20} >= {turn-zombie} ? {turned_roll>=turn-zombie}, HD Damaged: {if(turn-zombie==0,sum(2d6),0)} for {if(turn-zombie==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-zombie>0 and turn-zombie<99,sum(2d6),0)}, for {if(turn-zombie<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000625614*(level^5)-0.003738852*(level^4)+0.0789263956*(level^3)-0.6149553217*(level^2)-0.2486222129*level+17.6237849647),0),99)",
@@ -1232,7 +1232,7 @@
       "type": "number",
       "data": null,
       "name": "turn-skeleton",
-      "value": 13,
+      "value": 99,
       "rank": 0,
       "message": "Turn Skeleton/1 HD Undead: {turned_roll = 1d20} >= {turn-skeleton} ? {turned_roll>=turn-skeleton}, HD Damaged: {if(turn-skeleton==0,sum(2d6),0)} for {if(turn-skeleton==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-skeleton>0 and turn-skeleton<99,sum(2d6),0)}, for {if(turn-skeleton<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000504622*(level^5)-0.0026534601*(level^4)+0.0458096666*(level^3)-0.2022098938*(level^2)-1.8776216664*level+15.1859207251),0),99)",
@@ -1244,10 +1244,10 @@
       "type": "number",
       "data": null,
       "name": "Magic Wands",
-      "value": 12,
+      "value": 13,
       "rank": 1,
       "message": "Magic Wands Saving Throw: {1d20 >= magic_wands}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_magic_wands+if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+12.9583591331),6),if(indexOf(\"Fighter\",class)==0,race_magic_wands+if(level<=19,round(-0.0000002989*(level^8)+0.0000232422*(level^7)-0.0007310049*(level^6)+0.0118833669*(level^5)-0.1053258172*(level^4)+0.4855565021*(level^3)-0.933699521*(level^2)-0.3398406655*level+13.9684975507),6),if(indexOf(\"Magic-User\",class)==0,race_magic_wands+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+13.3690402477),6),if(indexOf(\"Thief\",class)==0,race_magic_wands+if(level<=11,round(-0.2363636364*level+14.3272727273),if(level<=20,round(-0.2333333333*level+13.0666666667),8)),20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_magic_wands+if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+12.9583591331),6),if(indexOf(\"Fighter\",class)==0,race_magic_wands+if(level<=19,round(-0.0000002989*(level^8)+0.0000232422*(level^7)-0.0007310049*(level^6)+0.0118833669*(level^5)-0.1053258172*(level^4)+0.4855565021*(level^3)-0.933699521*(level^2)-0.3398406655*level+13.9684975507),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_magic_wands+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+13.3690402477),6),if(indexOf(\"Thief\",class)==0,race_magic_wands+if(level<=11,round(-0.2363636364*level+14.3272727273),if(level<=20,round(-0.2333333333*level+13.0666666667),8)),20))))",
       "characterId": 663964
     },
     {
@@ -1256,7 +1256,7 @@
       "type": "number",
       "data": null,
       "name": "turn-ghoul",
-      "value": 19,
+      "value": 99,
       "rank": 2,
       "message": "Turn Ghoul/3 HD Undead: {turned_roll = 1d20} >= {turn-ghoul} ? {turned_roll>=turn-ghoul}, HD Damaged: {if(turn-ghoul==0,sum(2d6),0)} for {if(turn-ghoul==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-ghoul>0 and turn-ghoul<99,sum(2d6),0)}, for {if(turn-ghoul<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000391335*(level^5)-0.0029176329*(level^4)+0.0775512066*(level^3)-0.8164146258*(level^2)+1.4800916969*level+18.0423172054),0),99)",
@@ -1282,7 +1282,7 @@
       "type": "number",
       "data": null,
       "name": "turn-wight",
-      "value": 21,
+      "value": 99,
       "rank": 0,
       "message": "Turn Wight/4 HD Undead: {turned_roll = 1d20} >= {turn-wight} ? {turned_roll>=turn-wight}, HD Damaged: {if(turn-wight==0,sum(2d6),0)} for {if(turn-wight==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-wight>0 and turn-wight<99,sum(2d6),0)}, for {if(turn-wight<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=19,round(-0.000082483*(level^5)+0.0036057262*(level^4)-0.0450074877*(level^3)+0.0988470509*(level^2)-0.7354556004*level+21.5079208482),0),99)",
@@ -1294,7 +1294,7 @@
       "type": "number",
       "data": null,
       "name": "turn-wraith",
-      "value": 23,
+      "value": 99,
       "rank": 0,
       "message": "Turn Wraith/5 HD Undead: {turned_roll = 1d20} >= {turn-wraith} ? {turned_roll>=turn-wraith}, HD Damaged: {if(turn-wraith==0,sum(2d6),0)} for {if(turn-wraith==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-wraith>0 and turn-wraith<99,sum(2d6),0)}, for {if(turn-wraith<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.0001141248*(level^5)+0.0061167283*(level^4)-0.1104687404*(level^3)+0.7613900735*(level^2)-2.9913633773*level+25.492621259),0),99)",
@@ -1306,7 +1306,7 @@
       "type": "number",
       "data": null,
       "name": "turn-mummy",
-      "value": 25,
+      "value": 99,
       "rank": 1,
       "message": "Turn Mummy/6 HD Undead: {turned_roll = 1d20} >= {turn-mummy} ? {turned_roll>=turn-mummy}, HD Damaged: {if(turn-mummy==0,sum(2d6),0)} for {if(turn-mummy==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-mummy>0 and turn-mummy<99,sum(2d6),0)}, for {if(turn-mummy<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.0000140216*(level^5)+0.0015637938*(level^4)-0.0425230057*(level^3)+0.3835557418*(level^2)-2.22198224*level+27.0454076367),1),99)",
@@ -1332,7 +1332,7 @@
       "type": "number",
       "data": null,
       "name": "turn-ghost",
-      "value": 31,
+      "value": 99,
       "rank": -1,
       "message": "Turn Ghost/9+ HD Undead: {turned_roll = 1d20} >= {turn-ghost} ? {turned_roll>=turn-ghost}, HD Damaged: {if(turn-ghost==0,sum(2d6),0)} for {if(turn-ghost==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-ghost>0 and turn-ghost<99,sum(2d6),0)}, for {if(turn-ghost<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.000031801*(level^5)-0.0017922444*(level^4)+0.0335297636*(level^3)-0.2582568262*(level^2)-0.2200812235*level+31.3366873065),7),99)",
@@ -1344,7 +1344,7 @@
       "type": "number",
       "data": null,
       "name": "turn-spectre",
-      "value": 27,
+      "value": 99,
       "rank": -3,
       "message": "Turn Spectre/7 HD Undead: {turned_roll = 1d20} >= {turn-spectre} ? {turned_roll>=turn-spectre}, HD Damaged: {if(turn-spectre==0,sum(2d6),0)} for {if(turn-spectre==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-spectre>0 and turn-spectre<99,sum(2d6),0)}, for {if(turn-spectre<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000456993*(level^5)-0.0017380291*(level^4)+0.0186242795*(level^3)-0.0603213451*(level^2)-0.9986860094*level+28.0953560372),1),99)",
@@ -1352,13 +1352,13 @@
     },
     {
       "id": 35140166,
-      "parentId": 34833146,
+      "parentId": 34701279,
       "type": "title-section",
       "data": {
         "collapsed": false
       },
       "value": "Spells",
-      "rank": 7,
+      "rank": -10,
       "characterId": 663964
     },
     {
@@ -1386,7 +1386,7 @@
       "name": "spell_two",
       "value": 0,
       "rank": 0,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.000001939*(level^7)+0.0001449275*(level^6)-0.0043615112*(level^5)+0.067561807*(level^4)-0.5702053863*(level^3)+2.5326505768*(level^2)-4.7910180912*level+2.8142414733),5),if(indexOf(\"Magic-User\",class)>=0,if(level <=18,round(0.0000005086*(level ^8)-0.0000438053*(level ^7)+0.0015580132*(level ^6)-0.029541088*(level ^5)+0.3214141402*(level ^4)-2.008317474*(level ^3)+6.7866359313*(level ^2)-10.2960965523* level +5.2195041834),5),0),0)",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(-0.000001939*(level^7)+0.0001449275*(level^6)-0.0043615112*(level^5)+0.067561807*(level^4)-0.5702053863*(level^3)+2.5326505768*(level^2)-4.7910180912*level+2.8142414733),5),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level <=18,round(0.0000005086*(level ^8)-0.0000438053*(level ^7)+0.0015580132*(level ^6)-0.029541088*(level ^5)+0.3214141402*(level ^4)-2.008317474*(level ^3)+6.7866359313*(level ^2)-10.2960965523* level +5.2195041834),5),0),0)",
       "characterId": 663964
     },
     {
@@ -1397,7 +1397,7 @@
       "name": "spell_threes",
       "value": 0,
       "rank": 0,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=19,round(-0.0000002592*(level^8)+0.0000235728*(level^7)-0.0008788366*(level^6)+0.0173140394*(level^5)-0.1934778397*(level^4)+1.21940096*(level^3)-4.0263783558*(level^2)+6.115280592*level+(-3.1565012553)),5),if(indexOf(\"Magic-User\",class)>=0,if(level <=20,round(-0.000000479843*(level ^8)+0.000039433487*(level ^7)-0.001324988139*(level ^6)+0.023414489018*(level ^5)-0.232854895236*(level ^4)+1.289984637974*(level ^3)-3.674109258163*(level ^2)+4.786674140531* level+(-2.174535284637)),5),0),0)",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=19,round(-0.0000002592*(level^8)+0.0000235728*(level^7)-0.0008788366*(level^6)+0.0173140394*(level^5)-0.1934778397*(level^4)+1.21940096*(level^3)-4.0263783558*(level^2)+6.115280592*level+(-3.1565012553)),5),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level <=20,round(-0.000000479843*(level ^8)+0.000039433487*(level ^7)-0.001324988139*(level ^6)+0.023414489018*(level ^5)-0.232854895236*(level ^4)+1.289984637974*(level ^3)-3.674109258163*(level ^2)+4.786674140531* level+(-2.174535284637)),5),0),0)",
       "characterId": 663964
     },
     {
@@ -1408,7 +1408,7 @@
       "name": "spell_fives",
       "value": 0,
       "rank": 3,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level <=19,round(0.0000002425*(level ^8)-0.0000211921*(level ^7)+0.0007646924*(level ^6)-0.0146627001*(level ^5)+0.1599630186*(level ^4)-0.9867866811*(level ^3)+3.2500376981*(level ^2)-5.0240782288* level +2.6561640593),3),if( indexOf(\"Magic-User\",class)>=0,if(level <=20,round(0.0000003345*(level ^8)-0.0000275954*(level ^7)+0.000936218*(level ^6)-0.0167968146*(level ^5)+0.1704599785*(level ^4)-0.9720643949*(level ^3)+2.9507255988*(level ^2)-4.2233290135* level +2.1035631952),4),0),0)",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level <=19,round(0.0000002425*(level ^8)-0.0000211921*(level ^7)+0.0007646924*(level ^6)-0.0146627001*(level ^5)+0.1599630186*(level ^4)-0.9867866811*(level ^3)+3.2500376981*(level ^2)-5.0240782288* level +2.6561640593),3),if( indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level <=20,round(0.0000003345*(level ^8)-0.0000275954*(level ^7)+0.000936218*(level ^6)-0.0167968146*(level ^5)+0.1704599785*(level ^4)-0.9720643949*(level ^3)+2.9507255988*(level ^2)-4.2233290135* level +2.1035631952),4),0),0)",
       "characterId": 663964
     },
     {
@@ -1419,7 +1419,7 @@
       "name": "spell_sixes",
       "value": 0,
       "rank": 4,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=17,round(0.0000000795*(level^8)-0.0000003125*(level^7)-0.0001524899*(level^6)+0.004870272*(level^5)-0.0643724815*(level^4)+0.4263394617*(level^3)-1.4279169019*(level^2)+2.1939958748*level+(-1.1470588314)),3),if(indexOf(\"Magic-User\",class)>=0,if(level<=16,round(-0.000000674*(level^8)+0.0000529734*(level^7)-0.0016806381*(level^6)+0.0277862154*(level^5)-0.258021623*(level^4)+1.3552383743*(level^3)-3.8509537552*(level^2)+5.2641847392*level+(-2.5528847221)),3),0),0)",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=17,round(0.0000000795*(level^8)-0.0000003125*(level^7)-0.0001524899*(level^6)+0.004870272*(level^5)-0.0643724815*(level^4)+0.4263394617*(level^3)-1.4279169019*(level^2)+2.1939958748*level+(-1.1470588314)),3),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level<=16,round(-0.000000674*(level^8)+0.0000529734*(level^7)-0.0016806381*(level^6)+0.0277862154*(level^5)-0.258021623*(level^4)+1.3552383743*(level^3)-3.8509537552*(level^2)+5.2641847392*level+(-2.5528847221)),3),0),0)",
       "characterId": 663964
     },
     {
@@ -1460,7 +1460,7 @@
       "type": "text",
       "data": null,
       "name": "Hit Dice Type",
-      "value": "d 6",
+      "value": "d 8",
       "rank": 101,
       "formula": "if(indexOf(\"Cleric\",class)==0,\"d 6\",if(indexOf(\"Elf\",race)==0 and indexOf(\"Fighter\",class)==0,\"d 6\",if(indexOf(\"Halfling\",race)==0 and indexOf(\"Fighter\",class)==0,\"d 6\",if(indexOf(\"Fighter\",class)==0,\"d 8\",\"d 4\"))))",
       "characterId": 663964
@@ -1473,7 +1473,7 @@
       "name": "Hit Dice Bonus Next Level",
       "value": 0,
       "rank": 107,
-      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0,if(level+1<=20,max(0,level+1+(-9)),11),if(level+1<=20,max(0,2*(level+1)+(-18)),22))",
+      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if(level+1<=20,max(0,level+1+(-9)),11),if(level+1<=20,max(0,2*(level+1)+(-18)),22))",
       "characterId": 663964
     },
     {
@@ -1484,7 +1484,7 @@
       "name": "Hit Dice Bonus",
       "value": 0,
       "rank": 105,
-      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0,if(level<=20,max(0,level+(-9)),11),if(level<=20,max(0,2*level+(-18)),22))",
+      "formula": "if(indexOf(\"Cleric\",class)==0 or indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if(level<=20,max(0,level+(-9)),11),if(level<=20,max(0,2*level+(-18)),22))",
       "characterId": 663964
     },
     {
@@ -1493,9 +1493,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Character Template by Brucifer - version",
-      "value": "1.31",
-      "rank": -5,
-      "formula": "1.31",
+      "value": "1.32",
+      "rank": -4,
+      "formula": "1.32",
       "characterId": 663964
     },
     {
@@ -1611,19 +1611,7 @@
       "name": "spell_one",
       "value": 0,
       "rank": -3,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000245771*(level^5)-0.0013700302*(level^4)+0.0291420753*(level^3)-0.2919572458*(level^2)+1.5797248539*level+(-1.2016511868)),6),if(indexOf(\"Magic-User\",class)>=0,if(level<=20,round(-0.0000092318*(level^5)+0.0004385914*(level^4)-0.0067468041*(level^3)+0.0340845101*(level^2)+0.2422595296*level+0.9870485036),6),0),0)",
-      "characterId": 663964
-    },
-    {
-      "id": 34828712,
-      "parentId": 34701311,
-      "type": "number",
-      "data": null,
-      "name": "Paralysis or Turn to Stone",
-      "value": 14,
-      "rank": 2,
-      "message": "Paralysis or Turn to Stone Saving Throw: {1d20 >= paralysis_or_turn_to_stone}",
-      "formula": "if(indexOf(\"Magic-User\",class)>=0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+12.3690402477),5),if(indexOf(\"Cleric\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000049506*(level^6)-0.0003178086*(level^5)+0.0078912969*(level^4)-0.0951341589*(level^3)+0.5702836128*(level^2)-1.7858108966*level+15.1999999999),9)if(indexOf(\"Fighter\",class)==0,race_paralysis_or_turn_to_stone+if(level<=18,round(0.0000002098*(level^8)-0.0000163739*(level^7)+0.00052028*(level^6)-0.0086445844*(level^5)+0.0801484297*(level^4)-0.4087726145*(level^3)+1.0531792976*(level^2)-1.4786400703*level+14.941551316),8),if(indexOf(\"Thief\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+13.3118679051),8),20))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000245771*(level^5)-0.0013700302*(level^4)+0.0291420753*(level^3)-0.2919572458*(level^2)+1.5797248539*level+(-1.2016511868)),6),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level<=20,round(-0.0000092318*(level^5)+0.0004385914*(level^4)-0.0067468041*(level^3)+0.0340845101*(level^2)+0.2422595296*level+0.9870485036),6),0),0)",
       "characterId": 663964
     },
     {
@@ -1634,7 +1622,7 @@
       "name": "Racial Special Abilities",
       "value": "Gain +10% bonus to XP",
       "rank": 0,
-      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Dwarf Detection: able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6, a search must be performed before this roll may be made.\",if(indexOf(\"Elf\",Race)==0,\"Has 1 in a 6-sided die chance to find secret doors with a cursory look; Immune to paralyzing attack of ghouls; Less likely to be surprised, reducing the chance by 1 in a 6-sided die chance\",if(indexOf(\"Halfling\",Race)==0,\"Gains +1 Attack Bonus with ranged weapons; +2 AC when attacked in melee by creatures larger than man-sized; +1 to Initiative; Hide Outdoors 90% Success; Hide Indoors 70% Success\",if(indexOf(\"Human\",Race)==0,\"Gain +10% bonus to XP\",\"see Rules\"))))",
+      "formula": "if(indexOf(\"Dwarf\",Race)==0,\"Dwarf Detection: able to detect slanting passages, traps, shifting walls and new construction on a roll of 1-2 on 1d6, a search must be performed before this roll may be made.\",if(indexOf(\"Elf\",Race)==0,\"Has 1 in a 6-sided die chance to find secret doors with a cursory look; Immune to paralyzing attack of ghouls; Less likely to be surprised, reducing the chance by 1 in a 6-sided die chance\",if(indexOf(\"Halfling\",Race)==0,\"Gains +1 Attack Bonus with ranged weapons; +2 AC when attacked in melee by creatures larger than man-sized; +1 to Initiative; Hide Outdoors 90% Success; Hide Indoors 70% Success\",if(indexOf(\"Chelonian\",race)==0,\"Base AC 13 due to thick skin, base AC 17 for back shell, can hold breath twice as long as humans, and underwater vision two times better than humans\",if(indexOf(\"Human\",Race)==0,\"Gain +10% bonus to XP\",\"see Rules\")))))",
       "characterId": 663964
     },
     {
@@ -1643,7 +1631,7 @@
       "type": "number",
       "data": null,
       "name": "turn-vampire",
-      "value": 29,
+      "value": 99,
       "rank": -2,
       "message": "Turn Vampire/8 HD Undead: {turned_roll = 1d20} >= {turn-vampire} ? {turned_roll>=turn-vampire}, HD Damaged: {if(turn-vampire==0,sum(2d6),0)} for {if(turn-vampire==0,sum(@:level:d8),0)} HP each, HD Turned: {if(turn-vampire>0 and turn-vampire<99,sum(2d6),0)}, for {if(turn-vampire<99,sum(2d4),0)} turns",
       "formula": "if(indexOf(\"Cleric\",class)==0,if(level<=20,round(0.0000530803*(level^5)-0.0025779195*(level^4)+0.0414824174*(level^3)-0.2750430336*(level^2)-0.2799407645*level+29.4553147575),3),99)",
@@ -1668,30 +1656,7 @@
       "name": "spell_fours",
       "value": 0,
       "rank": 2,
-      "formula": "if(indexOf(\"Cleric\",class)==0,if(level <=17,round(0.0000016459*(level ^8)-0.0001189702*(level ^7)+0.0035404141*(level ^6)-0.0558962822*(level ^5)+0.5027714081*(level ^4)-2.5753866772*(level ^3)+7.1507064892*(level ^2)-9.5645197437* level +4.5588236451),4),if(indexOf(\"Magic-User\",class)>=0,if(level <=16,round(0.0000026958*(level ^8)-0.0001791764*(level ^7)+0.0048833823*(level ^6)-0.070273593*(level ^5)+0.5729571807*(level ^4)-2.6462625846*(level ^3)+6.618461654*(level ^2)-8.0394694982* level +3.5576925684),4),0),0)",
-      "characterId": 663964
-    },
-    {
-      "id": 34828710,
-      "parentId": 34701311,
-      "type": "number",
-      "data": null,
-      "name": "Death Ray or Poison",
-      "value": 11,
-      "rank": 0,
-      "message": "Death Ray or Poison Saving Throw: {1d20 >= death_ray_or_poison}",
-      "formula": "if(indexOf(\"Cleric\",class)==0,race_death_ray_or_poison +if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+11.9583591331),5),if(indexOf(\"Fighter\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000009718*(level^7)+0.0000692796*(level^6)-0.0019822859*(level^5)+0.0290491553*(level^4)-0.2298498615*(level^3)+0.942984472*(level^2)-2.0522592504*level+13.0568668058),5),if(indexOf(\"Thief\",class)>=0,race_death_ray_or_poison+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+12.1215946654),6),if(indexOf(\"Magic-User\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000059227*(level^5)+0.0002599559*(level^4)-0.0038539385*(level^3)+0.0220395502*(level^2)-0.2906620982*level+13.3964912281),8),20))))",
-      "characterId": 663964
-    },
-    {
-      "id": 34828705,
-      "parentId": 34701295,
-      "type": "number",
-      "data": null,
-      "name": "XP Next Level",
-      "value": 1500,
-      "rank": 100,
-      "formula": "if(indexOf(\"Magic-User/Thief\",class)==0,if((level+1)<=7,round(31.25*((level+1)^5)-468.75*((level+1)^4)+3281.25*((level+1)^3)-10781.25*((level+1)^2)+19187.5*(level+1)-11250),225000*(level+1)+(-1575000)),if(indexOf(\"Fighter/Magic-User\",class)==0,if((level+1)<=7,round(37.5*((level+1)^5)-562.5*((level+1)^4)+3937.5*((level+1)^3)-12937.5*((level+1)^2)+23025*(level+1)-13500),270000*(level+1)+(-1890000)),if(indexOf(\"Cleric\",class)==0,if((level+1)<=7,round(12.5*((level+1)^5)-187.5*((level+1)^4)+1312.5*((level+1)^3)-4312.5*((level+1)^2)+7675*(level+1)-4500),90000*(level+1)-630000),if(indexOf(\"Fighter\",class)==0,if((level+1)<=7,round(16.6666666667*((level+1)^5)-250*((level+1)^4)+1750*((level+1)^3)-5750*((level+1)^2)+10233.3333333333*(level+1)-6000),120000*(level+1)-840000),if(indexOf(\"Magic-User\",class)==0,if((level+1)<=7,100*round(0.208333*((level+1)^5)-3.125*((level+1)^4)+21.875*((level+1)^3)-71.875*((level+1)^2)+127.916667*(level+1)-75),150000*(level+1)-1050000),if(indexOf(\"Thief\",class)==0,if((level+1)<=7,round(10.4166666667*((level+1)^5)-156.25*((level+1)^4)+1093.75*((level+1)^3)-3593.75*((level+1)^2)+6395.8333333333*(level+1)-3750),75000*(level+1)-525000),0))))))",
+      "formula": "if(indexOf(\"Cleric\",class)==0,if(level <=17,round(0.0000016459*(level ^8)-0.0001189702*(level ^7)+0.0035404141*(level ^6)-0.0558962822*(level ^5)+0.5027714081*(level ^4)-2.5753866772*(level ^3)+7.1507064892*(level ^2)-9.5645197437* level +4.5588236451),4),if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,if(level <=16,round(0.0000026958*(level ^8)-0.0001791764*(level ^7)+0.0048833823*(level ^6)-0.070273593*(level ^5)+0.5729571807*(level ^4)-2.6462625846*(level ^3)+6.618461654*(level ^2)-8.0394694982* level +3.5576925684),4),0),0)",
       "characterId": 663964
     },
     {
@@ -1722,6 +1687,108 @@
       "rank": 4,
       "message": "intelligence check: {turned_roll=1d20} + {intelligence} >= {if(level<=20,round(-0.5*level+17.2381),7)}: {turned_roll + intelligence >= if(level<=20,round(-0.5*level+17.2381),7)}",
       "formula": "if(intelligence-score<19,max(-3,round((-7.483032) + (2.396571*intelligence-score) - (0.3875923*(intelligence-score^2)) + (0.03564341*(intelligence-score^3)) - (0.001667064*(intelligence-score^4)) + (0.00003175359*(intelligence-score^5)))),3)",
+      "characterId": 663964
+    },
+    {
+      "id": 35639365,
+      "parentId": 35140166,
+      "type": "horizontal-section",
+      "data": null,
+      "rank": 4,
+      "characterId": 663964
+    },
+    {
+      "id": 35639366,
+      "parentId": 35639365,
+      "type": "section",
+      "data": null,
+      "rank": 0,
+      "size": 50,
+      "characterId": 663964
+    },
+    {
+      "id": 35639367,
+      "parentId": 35639365,
+      "type": "section",
+      "data": null,
+      "rank": 1,
+      "size": 50,
+      "characterId": 663964
+    },
+    {
+      "id": 35639368,
+      "parentId": 35639366,
+      "type": "number",
+      "data": null,
+      "name": "Cantrips or Orisons",
+      "value": 0,
+      "rank": 0,
+      "formula": "if(indexOf(\"Cleric\",class)==0,level+wisdom,if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,level+intelligence,0))",
+      "characterId": 663964
+    },
+    {
+      "id": 35639407,
+      "parentId": 35639367,
+      "type": "checkboxes",
+      "data": null,
+      "name": "Slots Lv 0",
+      "value": 0,
+      "rank": 0,
+      "characterId": 663964
+    },
+    {
+      "id": 35639408,
+      "parentId": 35639407,
+      "type": "number",
+      "data": null,
+      "name": "slots_lv_0-max",
+      "value": 0,
+      "rank": 1,
+      "formula": "cantrips_or_orisons",
+      "characterId": 663964
+    },
+    {
+      "id": 35639409,
+      "parentId": 35140166,
+      "type": "paragraph",
+      "data": null,
+      "value": "<p>&nbsp;</p>",
+      "rank": 5,
+      "characterId": 663964
+    },
+    {
+      "id": 34828710,
+      "parentId": 34701311,
+      "type": "number",
+      "data": null,
+      "name": "Death Ray or Poison",
+      "value": 12,
+      "rank": 0,
+      "message": "Death Ray or Poison Saving Throw: {1d20 >= death_ray_or_poison}",
+      "formula": "if(indexOf(\"Cleric\",class)==0,race_death_ray_or_poison +if(level<=20,round(-0.0000013274*(level^6)+0.0000559631*(level^5)-0.0004940474*(level^4)-0.0079683478*(level^3)+0.1630964222*(level^2)-1.1700438434*level+11.9583591331),5),if(indexOf(\"Fighter\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000009718*(level^7)+0.0000692796*(level^6)-0.0019822859*(level^5)+0.0290491553*(level^4)-0.2298498615*(level^3)+0.942984472*(level^2)-2.0522592504*level+13.0568668058),5),if(indexOf(\"Thief\",class)>=0,race_death_ray_or_poison+if(level<=20,round(-0.000000412*(level^8)+0.0000330605*(level^7)-0.0010844267*(level^6)+0.018701251*(level^5)-0.1813672488*(level^4)+0.9782723775*(level^3)-2.6968326665*(level^2)+2.7194618752*level+12.1215946654),6),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,race_death_ray_or_poison+if(level<=20,round(-0.0000059227*(level^5)+0.0002599559*(level^4)-0.0038539385*(level^3)+0.0220395502*(level^2)-0.2906620982*level+13.3964912281),8),20))))",
+      "characterId": 663964
+    },
+    {
+      "id": 34828712,
+      "parentId": 34701311,
+      "type": "number",
+      "data": null,
+      "name": "Paralysis or Turn to Stone",
+      "value": 14,
+      "rank": 2,
+      "message": "Paralysis or Turn to Stone Saving Throw: {1d20 >= paralysis_or_turn_to_stone}",
+      "formula": "if(indexOf(\"Magic-User\",class)>=0 or indexOf(\"Necromancer\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000350653*(level^5)-0.002040162*(level^4)+0.0425793573*(level^3)-0.3820818904*(level^2)+0.9587124414*level+12.3690402477),5),if(indexOf(\"Cleric\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(0.0000049506*(level^6)-0.0003178086*(level^5)+0.0078912969*(level^4)-0.0951341589*(level^3)+0.5702836128*(level^2)-1.7858108966*level+15.1999999999),9)if(indexOf(\"Fighter\",class)==0,race_paralysis_or_turn_to_stone+if(level<=18,round(0.0000002098*(level^8)-0.0000163739*(level^7)+0.00052028*(level^6)-0.0086445844*(level^5)+0.0801484297*(level^4)-0.4087726145*(level^3)+1.0531792976*(level^2)-1.4786400703*level+14.941551316),8),if(indexOf(\"Thief\",class)==0,race_paralysis_or_turn_to_stone+if(level<=20,round(-0.0000059227*(level^5)+0.0003619313*(level^4)-0.0081369082*(level^3)+0.0814198656*(level^2)-0.5932539067*level+13.3118679051),8),20))))",
+      "characterId": 663964
+    },
+    {
+      "id": 34828705,
+      "parentId": 34701295,
+      "type": "number",
+      "data": null,
+      "name": "XP Next Level",
+      "value": 2000,
+      "rank": 100,
+      "formula": "if(indexOf(\"Magic-User/Thief\",class)==0,if((level+1)<=7,round(31.25*((level+1)^5)-468.75*((level+1)^4)+3281.25*((level+1)^3)-10781.25*((level+1)^2)+19187.5*(level+1)-11250),225000*(level+1)+(-1575000)),if(indexOf(\"Fighter/Magic-User\",class)==0,if((level+1)<=7,round(37.5*((level+1)^5)-562.5*((level+1)^4)+3937.5*((level+1)^3)-12937.5*((level+1)^2)+23025*(level+1)-13500),270000*(level+1)+(-1890000)),if(indexOf(\"Cleric\",class)==0,if((level+1)<=7,round(12.5*((level+1)^5)-187.5*((level+1)^4)+1312.5*((level+1)^3)-4312.5*((level+1)^2)+7675*(level+1)-4500),90000*(level+1)-630000),if(indexOf(\"Fighter\",class)==0,if((level+1)<=7,round(16.6666666667*((level+1)^5)-250*((level+1)^4)+1750*((level+1)^3)-5750*((level+1)^2)+10233.3333333333*(level+1)-6000),120000*(level+1)-840000),if(indexOf(\"Magic-User\",class)==0 or indexOf(\"Necromancer\",class)==0,if((level+1)<=7,100*round(0.208333*((level+1)^5)-3.125*((level+1)^4)+21.875*((level+1)^3)-71.875*((level+1)^2)+127.916667*(level+1)-75),150000*(level+1)-1050000),if(indexOf(\"Thief\",class)==0,if((level+1)<=7,round(10.4166666667*((level+1)^5)-156.25*((level+1)^4)+1093.75*((level+1)^3)-3593.75*((level+1)^2)+6395.8333333333*(level+1)-3750),75000*(level+1)-525000),0))))))",
       "characterId": 663964
     }
   ],
