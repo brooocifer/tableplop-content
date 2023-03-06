@@ -1,5 +1,30 @@
 HOWTO Upgrade a PC or NPC from an old template to a newer template
 
+Install jsonpatch: `pip3 install jsonpatch`
+
+Working Files:
+- older.json = Old Character File
+- newer.json = Newer Template File
+- output.json = New Character File
+- temp.json = Temporary Working File
+
+# json query by node 0..n
+jq '.properties[0]' newer.json > temp.json
+jq '.properties[n]' newer.json > temp.json
+jq '.appearance' older.json
+jq '.private' newer.json
+false
+jq '.type' newer.json
+"tableplop-character-v2"
+
+# json query by node name/value
+jq '.properties[] | select(.name=="dexterity")' older.json >> temp.json
+
+
+
+old instructions:
+
+
 This is a mess, I don't know how to properly do this, so just consider this whole thing a hack
 
 1. Export the character in TablePlop to JSON
