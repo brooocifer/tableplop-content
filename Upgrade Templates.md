@@ -11,7 +11,7 @@ This is a mess, I don't know how to properly do this, so just consider this whol
   and 
   `, "appearance": "https://...png", "pravate": false, "type": "tableplop-character-v2" }`
 5. Run the json2csv.jq script: `jq -r -L. 'include "json2csv"; json2csv' old.json > old.csv`
-6. Open old.csv with LibreOffice, save as old.?
+6. Open old.csv with LibreOffice, save as old.ods (ODF Spreadsheet)
 7. Paste in Upgrade.bas into a LibreOffice macro
 8. Run the macro
 9. Import the character JSON in TablePlop to a new character
