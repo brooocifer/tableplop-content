@@ -9,6 +9,7 @@ Working Files:
 - temp.json = Temporary Working File
 
 # json query by node 0..n
+```
 jq '.properties[0]' newer.json > temp.json
 jq '.properties[n]' newer.json > temp.json
 jq '.appearance' older.json
@@ -16,9 +17,10 @@ jq '.private' newer.json
 false
 jq '.type' newer.json
 "tableplop-character-v2"
+```
 
 # json query by node name/value
-jq '.properties[] | select(.name=="dexterity")' older.json >> temp.json
+`jq '.properties[] | select(.name=="dexterity")' older.json >> temp.json`
 
 
 
