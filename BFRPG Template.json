@@ -361,7 +361,7 @@
       "name": "Initiative",
       "value": 0,
       "rank": -20,
-      "message": "!r initiative = 1d6",
+      "message": "!r initiative = 1d6 + dexterity",
       "characterId": 663964
     },
     {
@@ -1307,9 +1307,9 @@
       "type": "text",
       "data": null,
       "name": "BFRPG Character Template by Brucifer - version",
-      "value": "1.35",
+      "value": "1.36",
       "rank": -4,
-      "formula": "1.35",
+      "formula": "1.36",
       "characterId": 663964
     },
     {
